@@ -63,9 +63,10 @@
             padding: 10px 5%;
         }
 
-        .logo img {
-            height: 55px;
-            object-fit: contain;
+        /* Custom Coded Logo Style */
+        .logo {
+            display: flex;
+            align-items: center;
         }
 
         .nav-links {
@@ -363,9 +364,35 @@
     <!-- Navigation Header -->
     <header>
         <nav>
+            <!-- കോഡിങ്ങിലൂടെ കൃത്യമായി തയ്യാറാക്കിയ ഒറിജിനൽ ലുക്കുള്ള ലോഗോ -->
             <div class="logo">
-                <img src="images/logo.png" alt="Today Harvest Trading Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x60?text=Today+Harvest';">
+                <a href="#home" style="text-decoration: none; display: flex; align-items: center;">
+                    <svg width="250" height="60" viewBox="0 0 280 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- T letter -->
+                        <text x="5" y="42" font-family="'Poppins', sans-serif" font-weight="700" font-size="44" fill="#0d3b66">T</text>
+                        
+                        <!-- o letter replaced with custom fresh produce icon matching your logo -->
+                        <g transform="translate(33, 7)">
+                            <!-- Outer Green Leaf/Fruit Circle -->
+                            <circle cx="16" cy="22" r="14" fill="#2e7d32"/>
+                            <!-- Inner White Space -->
+                            <circle cx="16" cy="22" r="9.5" fill="#ffffff"/>
+                            <!-- Inner Orange Core -->
+                            <circle cx="16" cy="22" r="6" fill="#f4a261"/>
+                            
+                            <!-- Top Green Leaf -->
+                            <path d="M16 8 C16 3, 23 1, 25 6 C19 8, 17 9.5, 16 8 Z" fill="#4caf50"/>
+                        </g>
+                        
+                        <!-- day letters -->
+                        <text x="67" y="42" font-family="'Poppins', sans-serif" font-weight="700" font-size="44" fill="#0d3b66">day</text>
+                        
+                        <!-- Harvest Trading Subtitle -->
+                        <text x="35" y="58" font-family="'Poppins', sans-serif" font-weight="600" font-size="13" fill="#1b4d3e" letter-spacing="0.5">Harvest Trading</text>
+                    </svg>
+                </a>
             </div>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
