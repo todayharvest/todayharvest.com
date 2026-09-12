@@ -324,7 +324,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* --- Enterprise About Section --- */
+        /* --- Enterprise About Section (Updated with Al Aweer Insights) --- */
         .about {
             padding: 120px 6%;
             display: flex;
@@ -365,7 +365,7 @@
             font-size: 17px;
         }
 
-        /* --- High-End Products Showcase --- */
+        /* --- High-End Products Showcase (Clean & Categorized) --- */
         .products {
             background-color: var(--surface-light);
             padding: 120px 6%;
@@ -404,6 +404,9 @@
             transition: var(--transition-smooth);
             border: 1px solid #e2e8f0;
             padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .product-card:hover {
@@ -422,12 +425,8 @@
         .product-card-content p {
             color: var(--text-muted);
             font-size: 15px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             line-height: 1.6;
-        }
-
-        .product-card-content p strong {
-            color: var(--text-primary);
         }
 
         .card-tag {
@@ -440,6 +439,36 @@
             font-weight: 700;
             letter-spacing: 0.3px;
             margin-bottom: 20px;
+        }
+
+        /* Collapsible List styling for full item list */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .collapsible-content.open {
+            max-height: 500px;
+        }
+
+        .view-more-btn {
+            background: transparent;
+            border: 2px solid var(--enterprise-green);
+            color: var(--enterprise-green);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: 15px;
+            align-self: flex-start;
+        }
+
+        .view-more-btn:hover {
+            background: var(--enterprise-green);
+            color: white;
         }
 
         /* --- Enterprise Features Section --- */
@@ -624,9 +653,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-globe-americas"></i> Global Import & Export Enterprise</div>
+            <div class="hero-badge"><i class="fas fa-globe-americas"></i> Global Import, Commission & Wholesale Enterprise</div>
             <h1>TODAY HARVEST TRADING LLC</h1>
-            <p>Import, Export, Wholesale, and Distribution of Premium Fresh Fruits & Vegetables Across GCC</p>
+            <p>Direct Wholesale Supplier & Commission Agent at Al Aweer Vegetable Market, Dubai</p>
             <div class="hero-btns">
                 <a href="#products" class="btn-primary">Explore Products</a>
                 <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20contact%20sales" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> Contact Sales</a>
@@ -637,122 +666,131 @@
     <!-- Key Statistics -->
     <section class="stats">
         <div class="stat-item">
-            <h2>6+</h2>
-            <p>Years Industry Experience</p>
-        </div>
-        <div class="stat-item">
             <h2>13+</h2>
-            <p>Global Source Countries</p>
+            <p>Global Sourcing Countries</p>
         </div>
         <div class="stat-item">
-            <h2>100%</h2>
-            <p>Quality & Freshness Commitment</p>
+            <h2>Al Aweer</h2>
+            <p>Permanent Dubai Market Hub</p>
         </div>
         <div class="stat-item">
             <h2>B2B</h2>
-            <p>Bulk & Container Sales</p>
+            <p>Supermarket & Wholesale Supply</p>
+        </div>
+        <div class="stat-item">
+            <h2>100%</h2>
+            <p>Reliable Trade Trust</p>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Reflected with Real Market Dynamics) -->
     <section class="about" id="about">
         <div class="about-img">
             <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Produce Wholesale Dubai">
         </div>
         <div class="about-text">
-            <h2>Trusted Fresh Produce Partner in Dubai</h2>
-            <p>TODAY HARVEST TRADING LLC, based in Al Aweer Vegetable Market, Dubai, specializes in international trading and container sales of farm-fresh fruits, vegetables, and premium dates sourced directly from the world's best agricultural hubs.</p>
-            <p>With a robust network spanning across 13+ countries, we supply supermarkets, hypermarkets, restaurants, hotels, catering companies, and wholesale buyers across the GCC with top-tier global produce, strict cold-chain maintenance, and reliable B2B wholesale logistics.</p>
+            <h2>Trusted Wholesale Partner in Al Aweer Vegetable Market</h2>
+            <p>Based in the heart of Dubai's Al Aweer Vegetable Market, <strong>TODAY HARVEST TRADING LLC</strong> stands as a permanent, high-trust physical hub connecting international farms with regional supermarkets, hypermarkets, and bulk buyers.</p>
+            <p>Operating through flexible commission-based global sourcing and direct import partnerships across 13+ countries, we ensure a steady, high-quality flow of fresh produce. Unlike temporary traders, our permanent market presence guarantees complete accountability, cold-chain integrity, and hassle-free returns or exchange support for all B2B buyers.</p>
             <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20would%20like%20to%20get%20a%20quote" target="_blank" class="btn-primary" style="display:inline-block; margin-top:10px;">Get a Quote</a>
         </div>
     </section>
 
-    <!-- Products / Global Sourcing Section -->
+    <!-- Products / Global Sourcing Section (Redesigned with Clean Categories & View More) -->
     <section class="products" id="products">
         <div class="section-container">
-            <h2 class="section-title">Global Sourcing & Product Network</h2>
-            <p class="section-subtitle">We bridge elite global farms with regional markets, ensuring pristine quality from origin to your doorstep.</p>
+            <h2 class="section-title">Our Global Sourcing Categories</h2>
+            <p class="section-subtitle">We bridge elite international farms with UAE markets, offering fresh, top-tier produce through reliable wholesale distribution.</p>
             
             <div class="product-grid">
-                <!-- Card 1: Middle East Dates -->
+                <!-- Card 1: India Sourcing -->
                 <div class="product-card">
-                    <span class="card-tag">Premium Dates</span>
-                    <div class="product-card-content">
-                        <h3>Middle Eastern Dates Collection</h3>
-                        <p><strong>Saudi Arabia:</strong> Various types of high-quality premium dates.</p>
-                        <p><strong>Jordan:</strong> Premium date varieties & bell peppers.</p>
-                        <p><strong>Palestine:</strong> Authentic Middle Eastern specialty dates.</p>
+                    <div>
+                        <span class="card-tag">India Sourcing</span>
+                        <div class="product-card-content">
+                            <h3>Farm-Fresh Produce from India</h3>
+                            <p>Sourced directly from leading agricultural belts. Specializing in high-demand items like Onions, Shallots, Green Chillies, Coconuts, Ginger, and Bananas.</p>
+                            <div class="collapsible-content" id="india-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Onion, Shallots, Green Chilli, Tomato, Coconut, Ginger, Garlic, Elephant Yam, Taro/Chembu, Cucumber, Red Pumpkin, Mixed Veg, Green/Yellow/Rasakadali Bananas, Pomegranate, Pineapple, Curry Leaves, Seasonal Mangoes, White, Black & Red Grapes.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="view-more-btn" onclick="toggleList('india-list', this)">View All Varieties</button>
                 </div>
 
-                <!-- Card 2: India -->
+                <!-- Card 2: China Imports -->
                 <div class="product-card">
-                    <span class="card-tag">India Sourcing</span>
-                    <div class="product-card-content">
-                        <h3>Fresh Farm Produce from India</h3>
-                        <p><strong>Vegetables:</strong> Onion, Shallots, Green Chilli, Tomato, Coconut, Ginger, Garlic, Elephant Yam, Taro/Chembu, Cucumber, Red Pumpkin, Mixed Veg.</p>
-                        <p><strong>Fruits & Leaves:</strong> Green/Yellow/Rasakadali Bananas, Pomegranate, Pineapple, Curry Leaves.</p>
-                        <p><strong>Seasonal:</strong> Fresh Mangoes, White, Black & Red Grapes.</p>
+                    <div>
+                        <span class="card-tag">China Sourcing</span>
+                        <div class="product-card-content">
+                            <h3>Imports from China</h3>
+                            <p>Premium grade garlic varieties, crisp apples, and root vegetables imported via steady cold-chain shipping channels.</p>
+                            <div class="collapsible-content" id="china-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Pure White Garlic, Normal White Garlic, Peeled Garlic, Apples, Oranges, Mixed Grapes, Red & White Dragon Fruit, Carrot, Ginger, Taro.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="view-more-btn" onclick="toggleList('china-list', this)">View All Varieties</button>
                 </div>
 
-                <!-- Card 3: China -->
+                <!-- Card 3: Middle East Dates & Produce -->
                 <div class="product-card">
-                    <span class="card-tag">China Sourcing</span>
-                    <div class="product-card-content">
-                        <h3>Imports from China</h3>
-                        <p><strong>Garlic Varieties:</strong> Pure White Garlic, Normal White Garlic, Peeled Garlic.</p>
-                        <p><strong>Fruits & Veg:</strong> Apples, Oranges, Mixed Grapes, Red & White Dragon Fruit, Carrot, Ginger, Taro.</p>
+                    <div>
+                        <span class="card-tag">Middle East Sourcing</span>
+                        <div class="product-card-content">
+                            <h3>Dates & Regional Specialties</h3>
+                            <p>Authentic and premium quality dates and fresh field crops sourced from Saudi Arabia, Jordan, and Palestine.</p>
+                            <div class="collapsible-content" id="me-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Saudi Arabia Premium Dates, Jordan Date Varieties & Bell Peppers, Palestine Specialty Dates.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="view-more-btn" onclick="toggleList('me-list', this)">View All Varieties</button>
                 </div>
 
-                <!-- Card 4: Egypt & Pakistan -->
+                <!-- Card 4: Egypt, Pakistan & Iran -->
                 <div class="product-card">
-                    <span class="card-tag">North & South Asia</span>
-                    <div class="product-card-content">
-                        <h3>Egypt & Pakistan Supply</h3>
-                        <p><strong>Egypt:</strong> Valencia Oranges, Fresh Lemons/Limes, Tomatoes & root crops.</p>
-                        <p><strong>Pakistan:</strong> Potatoes, Bulk Onions, Seasonal Pakistani Kinnow Oranges & Premium Mangoes.</p>
+                    <div>
+                        <span class="card-tag">Asia & North Africa</span>
+                        <div class="product-card-content">
+                            <h3>Egypt, Pakistan & Iran Supply</h3>
+                            <p>High-volume seasonal shipments including Valencia oranges, Pakistani Kinnow, bulk onions, and key tomato supplies from Iran.</p>
+                            <div class="collapsible-content" id="egypt-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>Egypt:</strong> Valencia Oranges, Fresh Lemons, Tomatoes. <strong>Pakistan:</strong> Potatoes, Bulk Onions, Kinnow Oranges, Mangoes. <strong>Iran:</strong> Tomatoes, Onions, Cabbage, Cauliflower, Beetroot, Broccoli.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="view-more-btn" onclick="toggleList('egypt-list', this)">View All Varieties</button>
                 </div>
 
-                <!-- Card 5: Vietnam & Sri Lanka -->
+                <!-- Card 5: Vietnam, Sri Lanka & Tropics -->
                 <div class="product-card">
-                    <span class="card-tag">Tropical Imports</span>
-                    <div class="product-card-content">
-                        <h3>Vietnam & Sri Lanka</h3>
-                        <p><strong>Vietnam:</strong> Red & White Dragon Fruit, Young Coconuts, Limes, Ginger.</p>
-                        <p><strong>Sri Lanka:</strong> Tender Coconuts, Red/Green Papaya, Tapioca (Kappa), Pineapple.</p>
+                    <div>
+                        <span class="card-tag">Tropical Imports</span>
+                        <div class="product-card-content">
+                            <h3>Vietnam & Sri Lanka Exotics</h3>
+                            <p>Fresh tropical fruits, tender green coconuts, and specialized farm yields from Southeast Asian and South Asian growers.</p>
+                            <div class="collapsible-content" id="vietnam-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>Vietnam:</strong> Dragon Fruit, Young Coconuts, Limes, Ginger. <strong>Sri Lanka:</strong> Tender Coconuts, Papaya, Tapioca (Kappa), Pineapple.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="view-more-btn" onclick="toggleList('vietnam-list', this)">View All Varieties</button>
                 </div>
 
-                <!-- Card 6: Iran, Oman & UAE -->
+                <!-- Card 6: UAE Farms & Global Avocados -->
                 <div class="product-card">
-                    <span class="card-tag">Regional Hub</span>
-                    <div class="product-card-content">
-                        <h3>Iran, Oman & UAE Local Farms</h3>
-                        <p><strong>Iran:</strong> Tomatoes (Key Source), White/Red Onions, Cabbage, Cauliflower, Beetroot, Broccoli.</p>
-                        <p><strong>Oman:</strong> Local farm-fresh vegetables and agricultural yield.</p>
-                        <p><strong>UAE Farms:</strong> Tomatoes, Cucumber, Mini Cucumber, Seasonal Strawberries/Blackberries, Fresh Coriander Leaves & leafy greens.</p>
+                    <div>
+                        <span class="card-tag">Local & Specialty</span>
+                        <div class="product-card-content">
+                            <h3>UAE Farms & Global Avocados</h3>
+                            <p>Fresh local greenhouse produce from UAE farms alongside premium creamy avocados sourced directly from Mexico, Kenya, and Uganda.</p>
+                            <div class="collapsible-content" id="local-list">
+                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>UAE Farms:</strong> Tomatoes, Mini Cucumber, Strawberries, Coriander leaves. <strong>Global:</strong> Premium Avocados (Mexico, Kenya, Uganda).</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Card 7: Americas & Africa (Mexico, Kenya, Uganda) -->
-                <div class="product-card">
-                    <span class="card-tag">Global Specialty</span>
-                    <div class="product-card-content">
-                        <h3>Mexico, Kenya & Uganda</h3>
-                        <p><strong>Avocados:</strong> Premium creamy avocados sourced directly from specialized global plantations for high-end hospitality and retail markets.</p>
-                    </div>
-                </div>
-
-                <!-- Card 8: B2B Wholesale & Logistics -->
-                <div class="product-card">
-                    <span class="card-tag">B2B Logistics</span>
-                    <div class="product-card-content">
-                        <h3>Container & Bulk Wholesale</h3>
-                        <p><strong>Operations:</strong> Full Container Loads (FCL), temperature-controlled cold-chain shipping, custom packaging, and dependable B2B wholesale distribution across GCC.</p>
-                    </div>
+                    <button class="view-more-btn" onclick="toggleList('local-list', this)">View All Varieties</button>
                 </div>
             </div>
         </div>
@@ -761,27 +799,27 @@
     <!-- Why Choose Us -->
     <section class="features" id="why-us">
         <h2 class="section-title" style="color: var(--enterprise-blue);">Why Choose Today Harvest?</h2>
-        <p class="section-subtitle">Your trusted partner for quality, reliability, and global trade excellence.</p>
+        <p class="section-subtitle">Your trusted physical market partner for quality, accountability, and trade excellence.</p>
         <div class="features-grid">
             <div class="feature-box">
-                <i class="fas fa-truck-fast"></i>
-                <h3>Reliable Delivery</h3>
-                <p>On-time cold chain logistics ensuring peak freshness upon arrival.</p>
+                <i class="fas fa-store"></i>
+                <h3>Permanent Market Presence</h3>
+                <p>Located firmly in Al Aweer Market, ensuring complete accountability and reliable physical support.</p>
             </div>
             <div class="feature-box">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Quality Assured</h3>
-                <p>Strict quality control standards from farm origin to destination market.</p>
+                <i class="fas fa-handshake"></i>
+                <h3>Commission & Direct Sourcing</h3>
+                <p>Flexible and transparent trade operations backed by expert global agent networks.</p>
             </div>
             <div class="feature-box">
-                <i class="fas fa-tags"></i>
-                <h3>Competitive Rates</h3>
-                <p>Direct wholesale sourcing delivering maximum value for bulk buyers.</p>
+                <i class="fas fa-undo-alt"></i>
+                <h3>Easy Return Support</h3>
+                <p>Unlike transient traders, our fixed shop setup guarantees secure and hassle-free return handling.</p>
             </div>
             <div class="feature-box">
                 <i class="fas fa-globe"></i>
-                <h3>Global Sourcing</h3>
-                <p>Strong import network across 13+ source countries worldwide.</p>
+                <h3>Global Sourcing Network</h3>
+                <p>Robust international supply chains spanning across 13+ source countries worldwide.</p>
             </div>
         </div>
     </section>
@@ -789,7 +827,7 @@
     <!-- Contact CTA Section -->
     <section class="contact" id="contact">
         <h2>Ready to Partner with Us?</h2>
-        <p>Located at Al Aweer Vegetable Market, Dubai. Contact Today Harvest Trading LLC today for container sales, wholesale inquiries, or custom packaging solutions.</p>
+        <p>Visit our permanent wholesale facility at Al Aweer Vegetable Market, Dubai, or chat with our sales desk for container deals and bulk distribution.</p>
         <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-primary" style="font-size:18px; padding: 16px 40px; display: inline-block;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
     </section>
 
@@ -802,6 +840,19 @@
     <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- JavaScript for View More Toggle -->
+    <script>
+        function toggleList(listId, button) {
+            const list = document.getElementById(listId);
+            list.classList.toggle('open');
+            if (list.classList.contains('open')) {
+                button.textContent = 'Show Less';
+            } else {
+                button.textContent = 'View All Varieties';
+            }
+        }
+    </script>
 
 </body>
 </html>
