@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today Harvest Trading LLC | Premium Fresh Fruits & Vegetables Across GCC</title>
+    <title>Today Harvest Trading LLC | Ultra-Premium Global Enterprise</title>
     <!-- Google Fonts & FontAwesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* ==========================================================
+           TODAY HARVEST TRADING LLC - ULTRA-PREMIUM GLOBAL ENTERPRISE
+           ================================================---------- */
+
         :root {
-            --primary-color: #0d3b66;
-            --accent-color: #10b981;
-            --secondary-color: #f4a261;
-            --dark-color: #07192f;
-            --light-bg: #f8f9fa;
-            --text-color: #333333;
+            --enterprise-navy: #07192f;      /* Deep Luxury Midnight Blue */
+            --enterprise-blue: #0f2c42;      /* Primary Brand Blue */
+            --enterprise-green: #10b981;     /* Vibrant Modern Emerald Green */
+            --enterprise-green-dark: #059669;/* Rich Green Hover */
+            --accent-gold: #d97706;         /* Premium Accent Gold */
+            --surface-light: #f8fafc;        /* Soft Clean Surface */
+            --surface-white: #ffffff;        /* Pure White */
+            --text-primary: #0f172a;       /* Deep Slate Main Text */
+            --text-muted: #64748b;         /* Professional Subtext */
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            
+            --shadow-soft: 0 10px 30px -5px rgba(15, 23, 42, 0.06);
+            --shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.12);
+            --shadow-glow: 0 0 25px rgba(16, 185, 129, 0.2);
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * {
@@ -23,44 +37,69 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
-            color: var(--text-color);
-            background-color: #ffffff;
-            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--surface-white);
+            line-height: 1.8;
+            overflow-x: hidden;
         }
 
-        /* Top Bar */
+        /* --- Ultra-Clean Global Top Announcement Bar --- */
         .top-bar {
-            background-color: var(--dark-color);
-            color: #fff;
-            padding: 8px 5%;
+            background: var(--enterprise-navy);
+            color: #cbd5e1;
+            padding: 12px 6%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .top-bar span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-bar i {
+            color: var(--enterprise-green);
             font-size: 14px;
         }
 
-        .top-bar div i {
-            margin-right: 6px;
-            color: #25d366;
-        }
-
-        /* Header / Navbar */
+        /* --- Elite Sticky Glassmorphism Header --- */
         header {
-            background: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: var(--shadow-soft);
             position: sticky;
             top: 0;
             z-index: 1000;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            transition: var(--transition-smooth);
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 5%;
+            padding: 0 6%;
+            width: 100%;
         }
 
         .logo {
@@ -68,360 +107,484 @@
             align-items: center;
         }
 
-        /* Logo Styling - Fixed Size */
         .logo img {
-            height: 65px;
-            max-width: 250px;
+            height: 58px;
+            width: auto;
             object-fit: contain;
             display: block;
-            transition: transform 0.3s ease;
+            transition: var(--transition-smooth);
         }
 
         .logo img:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 25px;
+            gap: 35px;
+            align-items: center;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: 0.3s;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 15px;
+            transition: var(--transition-smooth);
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--enterprise-green);
+            transition: width 0.3s ease;
+            border-radius: 2px;
         }
 
         .nav-links a:hover {
-            color: var(--accent-color);
+            color: var(--enterprise-green);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
         }
 
         .btn-header {
-            background-color: #25d366;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 25px;
+            background: linear-gradient(135deg, var(--enterprise-green), var(--enterprise-green-dark));
+            color: var(--surface-white);
+            padding: 12px 26px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .btn-header:hover {
-            background-color: #1eb954;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
         }
 
-        /* Hero Section */
+        /* --- Immersive Cinematic Hero Section --- */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1600&q=80');
+            background: linear-gradient(135deg, rgba(7, 25, 47, 0.88), rgba(15, 44, 66, 0.82)), url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1920&q=85');
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            background-attachment: fixed;
+            height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #ffffff;
+            color: var(--surface-white);
             padding: 0 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, rgba(255,255,255,1), transparent);
+        }
+
+        .hero-content {
+            max-width: 950px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            padding: 8px 18px;
+            border-radius: 30px;
+            color: #34d399;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
         }
 
         .hero-content h1 {
-            font-size: 44px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            line-height: 1.15;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.4);
         }
 
         .hero-content p {
-            font-size: 18px;
-            max-width: 750px;
-            margin: 0 auto 25px;
+            font-size: 20px;
+            max-width: 780px;
+            margin: 0 auto 40px;
+            color: #cbd5e1;
+            font-weight: 400;
         }
 
         .hero-btns {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
         }
 
         .btn-primary {
-            background-color: var(--accent-color);
-            color: #fff;
-            padding: 12px 30px;
-            border-radius: 30px;
+            background: linear-gradient(135deg, var(--enterprise-green), var(--enterprise-green-dark));
+            color: var(--surface-white);
+            padding: 16px 36px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+            font-weight: 700;
+            font-size: 16px;
+            transition: var(--transition-smooth);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
         }
 
         .btn-secondary {
-            background-color: #25d366;
-            color: #fff;
-            padding: 12px 30px;
-            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: var(--surface-white);
+            padding: 16px 36px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+            font-weight: 700;
+            font-size: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: var(--transition-smooth);
         }
 
         .btn-primary:hover, .btn-secondary:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
-        /* Stats Section */
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--surface-white);
+        }
+
+        /* --- World-Class Stats Grid --- */
         .stats {
-            display: flex;
-            justify-content: space-around;
-            background-color: var(--light-bg);
-            padding: 40px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            background: var(--surface-white);
+            padding: 60px 6%;
+            gap: 30px;
             text-align: center;
+            position: relative;
+            z-index: 3;
+            margin-top: -50px;
+        }
+
+        .stat-item {
+            background: var(--surface-light);
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid #e2e8f0;
+            transition: var(--transition-smooth);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--enterprise-green);
+            background: var(--surface-white);
         }
 
         .stat-item h2 {
-            font-size: 36px;
-            color: var(--primary-color);
+            font-size: 42px;
+            color: var(--enterprise-blue);
+            font-weight: 800;
+            margin-bottom: 8px;
         }
 
         .stat-item p {
-            font-weight: 500;
-            color: #666;
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* About Section */
+        /* --- Enterprise About Section --- */
         .about {
-            padding: 80px 5%;
+            padding: 120px 6%;
             display: flex;
-            gap: 50px;
+            gap: 70px;
             align-items: center;
+            background: var(--surface-white);
+        }
+
+        .about-img {
+            flex: 1;
+            position: relative;
         }
 
         .about-img img {
             width: 100%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 580px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-hover);
+            object-fit: cover;
+            border: 4px solid var(--surface-light);
+        }
+
+        .about-text {
+            flex: 1;
         }
 
         .about-text h2 {
-            font-size: 32px;
-            color: var(--primary-color);
-            margin-bottom: 15px;
+            font-size: 40px;
+            color: var(--enterprise-blue);
+            margin-bottom: 24px;
+            font-weight: 800;
+            line-height: 1.25;
         }
 
         .about-text p {
-            margin-bottom: 15px;
-            color: #555;
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            font-size: 17px;
         }
 
-        /* Products / Global Sourcing Section */
+        /* --- High-End Products Showcase --- */
         .products {
-            padding: 100px 20px;
-            background-color: #07192f;
-            color: #ffffff;
-            width: 100%;
-        }
-
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
+            background-color: var(--surface-light);
+            padding: 120px 6%;
             text-align: center;
         }
 
         .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 42px;
+            color: var(--enterprise-blue);
             margin-bottom: 15px;
-            color: #ffffff;
+            font-weight: 800;
             letter-spacing: -0.5px;
-            text-align: center;
         }
 
         .section-subtitle {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            max-width: 700px;
-            margin: 0 auto 60px auto;
-            line-height: 1.6;
-            text-align: center;
+            color: var(--text-muted);
+            font-size: 17px;
+            margin-bottom: 60px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            gap: 35px;
             text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .product-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 16px;
-            padding: 30px;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: var(--surface-white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+            border: 1px solid #e2e8f0;
+            padding: 35px;
         }
 
         .product-card:hover {
-            transform: translateY(-6px);
-            border-color: #10b981;
-            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .card-tag {
-            display: inline-block;
-            background-color: rgba(16, 185, 129, 0.15);
-            color: #10b981;
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 6px 14px;
-            border-radius: 50px;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--enterprise-green);
         }
 
         .product-card-content h3 {
-            font-size: 1.35rem;
-            font-weight: 600;
+            color: var(--enterprise-blue);
+            font-size: 22px;
             margin-bottom: 15px;
-            color: #ffffff;
+            font-weight: 700;
         }
 
         .product-card-content p {
-            font-size: 0.95rem;
-            color: #cbd5e1;
+            color: var(--text-muted);
+            font-size: 15px;
             margin-bottom: 12px;
             line-height: 1.6;
         }
 
         .product-card-content p strong {
-            color: #ffffff;
-            font-weight: 600;
+            color: var(--text-primary);
         }
 
-        /* Why Choose Us */
+        .card-tag {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--enterprise-green);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 20px;
+        }
+
+        /* --- Enterprise Features Section --- */
         .features {
-            padding: 80px 5%;
+            padding: 120px 6%;
             text-align: center;
-            background-color: #ffffff;
-        }
-
-        .features h2 {
-            color: var(--primary-color);
+            background: var(--surface-white);
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 60px;
         }
 
         .feature-box {
-            padding: 30px;
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 12px;
-            transition: 0.3s;
+            padding: 45px 35px;
+            background: var(--surface-light);
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            transition: var(--transition-smooth);
+            text-align: center;
         }
 
         .feature-box:hover {
-            border-color: var(--accent-color);
+            background: var(--surface-white);
+            border-color: var(--enterprise-green);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-8px);
         }
 
         .feature-box i {
-            font-size: 40px;
-            color: var(--accent-color);
-            margin-bottom: 15px;
+            font-size: 48px;
+            color: var(--enterprise-green);
+            margin-bottom: 25px;
         }
 
-        /* Contact Section */
+        .feature-box h3 {
+            color: var(--enterprise-blue);
+            font-size: 20px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .feature-box p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        /* --- Global B2B Inquiry Contact Section --- */
         .contact {
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80');
+            background: linear-gradient(135deg, rgba(7, 25, 47, 0.95), rgba(15, 44, 66, 0.9)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1920&q=85');
             background-size: cover;
-            color: #fff;
-            padding: 80px 5%;
+            background-position: center;
+            color: var(--surface-white);
+            padding: 120px 6%;
             text-align: center;
         }
 
         .contact h2 {
-            font-size: 32px;
+            font-size: 42px;
             margin-bottom: 20px;
+            font-weight: 800;
         }
 
         .contact p {
-            max-width: 600px;
-            margin: 0 auto 30px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #cbd5e1;
+            font-size: 18px;
         }
 
-        /* Footer */
+        /* --- Elite Footer --- */
         footer {
-            background-color: #111;
-            color: #aaa;
-            padding: 40px 5% 20px;
+            background-color: var(--enterprise-navy);
+            color: #94a3b8;
+            padding: 60px 6% 30px;
             text-align: center;
+            border-top: 4px solid var(--enterprise-green);
         }
 
         footer p {
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
         }
 
-        /* Floating WhatsApp Button */
+        /* --- Floating WhatsApp Button with Pulse Animation --- */
         .whatsapp-float {
             position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 30px;
+            width: 65px;
+            height: 65px;
+            bottom: 40px;
+            right: 40px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
-            font-size: 32px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            font-size: 34px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
             z-index: 100;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            transition: 0.3s;
+            transition: var(--transition-smooth);
+            animation: pulse-green 2s infinite;
         }
 
         .whatsapp-float:hover {
-            transform: scale(1.1);
+            transform: scale(1.12) rotate(10deg);
         }
 
-        @media (max-width: 768px) {
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* --- Responsive Layout Adjustments --- */
+        @media (max-width: 900px) {
             .about {
                 flex-direction: column;
+                padding: 80px 5%;
             }
             .hero-content h1 {
-                font-size: 32px;
+                font-size: 36px;
+            }
+            .top-bar {
+                display: none;
             }
             .nav-links {
                 display: none;
             }
+            header {
+                height: 75px;
+            }
             .stats {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .logo img {
-                height: 50px;
-            }
-            .products {
-                padding: 60px 15px;
-            }
-            .section-title {
-                font-size: 2rem;
+                margin-top: 0;
             }
         }
     </style>
@@ -430,8 +593,13 @@
 
     <!-- Top Contact Bar -->
     <div class="top-bar">
-        <div><i class="fas fa-map-marker-alt"></i> Al Aweer Vegetable Market, Dubai, UAE</div>
-        <div><i class="fab fa-whatsapp"></i> +971 54 734 6335 | <i class="fas fa-envelope"></i> info@todayharvest.com</div>
+        <div class="top-bar-left">
+            <span><i class="fas fa-map-marker-alt"></i> Al Aweer Vegetable Market, Dubai, UAE</span>
+        </div>
+        <div class="top-bar-right">
+            <span><i class="fab fa-whatsapp"></i> +971 54 734 6335</span>
+            <span><i class="fas fa-envelope"></i> info@todayharvest.com</span>
+        </div>
     </div>
 
     <!-- Navigation Header -->
@@ -456,6 +624,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-globe-americas"></i> Global Import & Export Enterprise</div>
             <h1>TODAY HARVEST TRADING LLC</h1>
             <p>Import, Export, Wholesale, and Distribution of Premium Fresh Fruits & Vegetables Across GCC</p>
             <div class="hero-btns">
@@ -472,8 +641,8 @@
             <p>Years Industry Experience</p>
         </div>
         <div class="stat-item">
-            <h2>7+</h2>
-            <p>Countries Supplied</p>
+            <h2>13+</h2>
+            <p>Global Source Countries</p>
         </div>
         <div class="stat-item">
             <h2>100%</h2>
@@ -492,8 +661,8 @@
         </div>
         <div class="about-text">
             <h2>Trusted Fresh Produce Partner in Dubai</h2>
-            <p>TODAY HARVEST TRADING LLC, based in Al Aweer Vegetable Market, Dubai, specializes in international trading and container sales of farm-fresh fruits and vegetables.</p>
-            <p>With over 6 years of industry experience, we supply supermarkets, hypermarkets, restaurants, hotels, catering companies, and wholesale buyers across GCC with top-tier produce, competitive pricing, and guaranteed on-time delivery.</p>
+            <p>TODAY HARVEST TRADING LLC, based in Al Aweer Vegetable Market, Dubai, specializes in international trading and container sales of farm-fresh fruits, vegetables, and premium dates sourced directly from the world's best agricultural hubs.</p>
+            <p>With a robust network spanning across 13+ countries, we supply supermarkets, hypermarkets, restaurants, hotels, catering companies, and wholesale buyers across the GCC with top-tier global produce, strict cold-chain maintenance, and reliable B2B wholesale logistics.</p>
             <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20would%20like%20to%20get%20a%20quote" target="_blank" class="btn-primary" style="display:inline-block; margin-top:10px;">Get a Quote</a>
         </div>
     </section>
@@ -501,47 +670,88 @@
     <!-- Products / Global Sourcing Section -->
     <section class="products" id="products">
         <div class="section-container">
-            <h2 class="section-title">Global Sourcing & Core Offerings</h2>
-            <p class="section-subtitle">We bridge global farms and regional markets with rigorous quality control and cold chain logistics.</p>
+            <h2 class="section-title">Global Sourcing & Product Network</h2>
+            <p class="section-subtitle">We bridge elite global farms with regional markets, ensuring pristine quality from origin to your doorstep.</p>
             
             <div class="product-grid">
-                <!-- Product 1 -->
+                <!-- Card 1: Middle East Dates -->
                 <div class="product-card">
-                    <span class="card-tag">Fresh Fruits</span>
+                    <span class="card-tag">Premium Dates</span>
                     <div class="product-card-content">
-                        <h3>Premium Fruit Imports</h3>
-                        <p><strong>Varieties:</strong> Apples, Citrus, Berries, Bananas, Mangoes & Seasonal Selections.</p>
-                        <p><strong>Supply Standard:</strong> Sourced directly from certified international orchards ensuring peak sweetness, nutritional value, and extended shelf-life.</p>
+                        <h3>Middle Eastern Dates Collection</h3>
+                        <p><strong>Saudi Arabia:</strong> Various types of high-quality premium dates.</p>
+                        <p><strong>Jordan:</strong> Premium date varieties & bell peppers.</p>
+                        <p><strong>Palestine:</strong> Authentic Middle Eastern specialty dates.</p>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
+                <!-- Card 2: India -->
                 <div class="product-card">
-                    <span class="card-tag">Farm Vegetables</span>
+                    <span class="card-tag">India Sourcing</span>
                     <div class="product-card-content">
-                        <h3>Daily Farm Vegetables</h3>
-                        <p><strong>Varieties:</strong> Leafy greens, Root vegetables, Tomatoes, Onions, Cucumbers & Peppers.</p>
-                        <p><strong>Supply Standard:</strong> Hand-picked, carefully sorted, and hygienically packed to maintain crisp freshness from farm to retail shelves.</p>
+                        <h3>Fresh Farm Produce from India</h3>
+                        <p><strong>Vegetables:</strong> Onion, Shallots, Green Chilli, Tomato, Coconut, Ginger, Garlic, Elephant Yam, Taro/Chembu, Cucumber, Red Pumpkin, Mixed Veg.</p>
+                        <p><strong>Fruits & Leaves:</strong> Green/Yellow/Rasakadali Bananas, Pomegranate, Pineapple, Curry Leaves.</p>
+                        <p><strong>Seasonal:</strong> Fresh Mangoes, White, Black & Red Grapes.</p>
                     </div>
                 </div>
 
-                <!-- Product 3 -->
+                <!-- Card 3: China -->
                 <div class="product-card">
-                    <span class="card-tag">Exotic Selection</span>
+                    <span class="card-tag">China Sourcing</span>
                     <div class="product-card-content">
-                        <h3>Exotic & Specialty Produce</h3>
-                        <p><strong>Varieties:</strong> Special imported herbs, berries, mushrooms, and rare tropical fruits.</p>
-                        <p><strong>Supply Standard:</strong> Curated specifically for high-end hotels, upscale restaurants, and specialty gourmet supermarkets.</p>
+                        <h3>Imports from China</h3>
+                        <p><strong>Garlic Varieties:</strong> Pure White Garlic, Normal White Garlic, Peeled Garlic.</p>
+                        <p><strong>Fruits & Veg:</strong> Apples, Oranges, Mixed Grapes, Red & White Dragon Fruit, Carrot, Ginger, Taro.</p>
                     </div>
                 </div>
 
-                <!-- Product 4 -->
+                <!-- Card 4: Egypt & Pakistan -->
+                <div class="product-card">
+                    <span class="card-tag">North & South Asia</span>
+                    <div class="product-card-content">
+                        <h3>Egypt & Pakistan Supply</h3>
+                        <p><strong>Egypt:</strong> Valencia Oranges, Fresh Lemons/Limes, Tomatoes & root crops.</p>
+                        <p><strong>Pakistan:</strong> Potatoes, Bulk Onions, Seasonal Pakistani Kinnow Oranges & Premium Mangoes.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Vietnam & Sri Lanka -->
+                <div class="product-card">
+                    <span class="card-tag">Tropical Imports</span>
+                    <div class="product-card-content">
+                        <h3>Vietnam & Sri Lanka</h3>
+                        <p><strong>Vietnam:</strong> Red & White Dragon Fruit, Young Coconuts, Limes, Ginger.</p>
+                        <p><strong>Sri Lanka:</strong> Tender Coconuts, Red/Green Papaya, Tapioca (Kappa), Pineapple.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Iran, Oman & UAE -->
+                <div class="product-card">
+                    <span class="card-tag">Regional Hub</span>
+                    <div class="product-card-content">
+                        <h3>Iran, Oman & UAE Local Farms</h3>
+                        <p><strong>Iran:</strong> Tomatoes (Key Source), White/Red Onions, Cabbage, Cauliflower, Beetroot, Broccoli.</p>
+                        <p><strong>Oman:</strong> Local farm-fresh vegetables and agricultural yield.</p>
+                        <p><strong>UAE Farms:</strong> Tomatoes, Cucumber, Mini Cucumber, Seasonal Strawberries/Blackberries, Fresh Coriander Leaves & leafy greens.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Americas & Africa (Mexico, Kenya, Uganda) -->
+                <div class="product-card">
+                    <span class="card-tag">Global Specialty</span>
+                    <div class="product-card-content">
+                        <h3>Mexico, Kenya & Uganda</h3>
+                        <p><strong>Avocados:</strong> Premium creamy avocados sourced directly from specialized global plantations for high-end hospitality and retail markets.</p>
+                    </div>
+                </div>
+
+                <!-- Card 8: B2B Wholesale & Logistics -->
                 <div class="product-card">
                     <span class="card-tag">B2B Logistics</span>
                     <div class="product-card-content">
                         <h3>Container & Bulk Wholesale</h3>
-                        <p><strong>Varieties:</strong> Full Container Loads (FCL) and consolidated shipments for regional distributors.</p>
-                        <p><strong>Supply Standard:</strong> Temperature-controlled cold chain transit protecting produce integrity and freshness across GCC borders.</p>
+                        <p><strong>Operations:</strong> Full Container Loads (FCL), temperature-controlled cold-chain shipping, custom packaging, and dependable B2B wholesale distribution across GCC.</p>
                     </div>
                 </div>
             </div>
@@ -550,7 +760,8 @@
 
     <!-- Why Choose Us -->
     <section class="features" id="why-us">
-        <h2 class="section-title" style="color: var(--primary-color);">Why Choose Today Harvest?</h2>
+        <h2 class="section-title" style="color: var(--enterprise-blue);">Why Choose Today Harvest?</h2>
+        <p class="section-subtitle">Your trusted partner for quality, reliability, and global trade excellence.</p>
         <div class="features-grid">
             <div class="feature-box">
                 <i class="fas fa-truck-fast"></i>
@@ -570,7 +781,7 @@
             <div class="feature-box">
                 <i class="fas fa-globe"></i>
                 <h3>Global Sourcing</h3>
-                <p>Strong network across 7+ supply countries worldwide.</p>
+                <p>Strong import network across 13+ source countries worldwide.</p>
             </div>
         </div>
     </section>
@@ -579,7 +790,7 @@
     <section class="contact" id="contact">
         <h2>Ready to Partner with Us?</h2>
         <p>Located at Al Aweer Vegetable Market, Dubai. Contact Today Harvest Trading LLC today for container sales, wholesale inquiries, or custom packaging solutions.</p>
-        <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-secondary" style="font-size:18px; padding: 15px 40px;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-primary" style="font-size:18px; padding: 16px 40px; display: inline-block;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
     </section>
 
     <!-- Footer -->
