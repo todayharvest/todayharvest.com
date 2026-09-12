@@ -1,119 +1,343 @@
-<!-- Global Sourcing & Import Network Section -->
-<section class="products" id="products">
-    <div class="section-container">
-        <h2 class="section-title">Global Sourcing & Import Network</h2>
-        <p class="section-subtitle">Directly importing premium quality fresh fruits, vegetables, dates, and exotics from trusted agricultural hubs across the world to Al Aweer Central Market, Dubai.</p>
-        
-        <div class="product-grid">
-            <!-- UAE Local -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">UAE - Local Farms</span>
-                    <h3>Fresh Local Produce & Berries</h3>
-                    <p><strong>Vegetables:</strong> Local Tomatoes, Cucumbers, Mini Cucumbers, and fresh Leafy Vegetables including Coriander leaves.</p>
-                    <p><strong>Seasonal Berries:</strong> Fresh Strawberries and Blackberries.</p>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Harvest Trading LLC | Fresh Produce Wholesale Dubai</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS Reset & Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            <!-- India -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - India</span>
-                    <h3>Staples, Bananas & Seasonals</h3>
-                    <p><strong>Vegetables & Roots:</strong> Onions, Small Onions, Green Chillies, Tomatoes, Coconuts, Ginger, Garlic, Yam (ചേന), Arbi (ചേമ്പ്), Cucumbers, Red Pumpkin, Mixed Vegetables, Curry Leaves.</p>
-                    <p><strong>Fruits:</strong> Green Banana, Yellow Banana, Rasakadali Banana, Pomegranate, Pineapple.</p>
-                    <p><strong>Seasonal:</strong> Premium Mangoes & Grapes (White, Black, Red).</p>
-                </div>
-            </div>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #07192f;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-            <!-- Sri Lanka -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Sri Lanka</span>
-                    <h3>Tender Coconuts & Tropicals</h3>
-                    <p><strong>Coconuts:</strong> Fresh Tender Coconuts sourced for supreme quality.</p>
-                    <p><strong>Fruits & Roots:</strong> Red Papaya, Green Papaya, Fresh Tapioca (കപ്പ), and Pineapple.</p>
-                </div>
-            </div>
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(135deg, rgba(7, 25, 47, 0.9), rgba(10, 37, 64, 0.8)), 
+                        url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+        }
 
-            <!-- Iran -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Iran</span>
-                    <h3>Tomatoes & Quality Vegetables</h3>
-                    <p><strong>Core Supply:</strong> Premium quality fresh Tomatoes (Primary Source), White Onions, and Regular Red Onions.</p>
-                    <p><strong>Vegetables:</strong> Cabbage, Cauliflower, Beetroot, and Broccoli.</p>
-                </div>
-            </div>
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
 
-            <!-- Pakistan -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Pakistan</span>
-                    <h3>Bulk Staples & Seasonals</h3>
-                    <p><strong>Staples:</strong> High-volume bulk Potatoes and Onions supplied regularly.</p>
-                    <p><strong>Seasonal:</strong> World-renowned Pakistani Kinnow Oranges and juicy Mangoes.</p>
-                </div>
-            </div>
+        .hero-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-            <!-- Egypt -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Egypt</span>
-                    <h3>Citrus & Farm Produce</h3>
-                    <p><strong>Citrus:</strong> Premium Egyptian Valencia Oranges and fresh Lemons.</p>
-                    <p><strong>Produce:</strong> Fresh Tomatoes and high-grade agricultural items.</p>
-                </div>
-            </div>
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
 
-            <!-- China -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - China</span>
-                    <h3>Garlic, Apples & Exotics</h3>
-                    <p><strong>Garlic Varieties:</strong> Pure White Garlic, Normal White Garlic, and Peeled Garlic in bulk.</p>
-                    <p><strong>Fruits:</strong> Fresh Apples, Oranges, Multi-grade Grapes, Red & White Dragon Fruits.</p>
-                    <p><strong>Roots:</strong> Carrots, Ginger, and Arbi (ചേമ്പ്).</p>
-                </div>
-            </div>
+        .hero h1 span {
+            color: #10b981;
+        }
 
-            <!-- Vietnam -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Vietnam</span>
-                    <h3>Exotics & Tropical Fruits</h3>
-                    <p><strong>Fruits:</strong> Premium Red & White Dragon Fruits.</p>
-                    <p><strong>Specialties:</strong> Young Coconuts, Limes, and Fresh Ginger.</p>
-                </div>
-            </div>
+        .hero p {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
 
-            <!-- Mexico, Kenya & Uganda -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Global</span>
-                    <h3>Avocados</h3>
-                    <p><strong>Sourcing Hubs:</strong> Premium quality Avocados sourced directly from Mexico, Kenya, and Uganda.</p>
-                </div>
-            </div>
+        /* --- Products & Global Sourcing Section --- */
+        .products {
+            padding: 100px 20px;
+            background-color: #07192f;
+        }
 
-            <!-- Dates Hubs: Saudi, Jordan, Palestine -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Direct Import - Middle East</span>
-                    <h3>Premium Dates & Bell Peppers</h3>
-                    <p><strong>Dates:</strong> High-quality premium Dates sourced from Saudi Arabia, Jordan, and Palestine.</p>
-                    <p><strong>Vegetables:</strong> Fresh Bell Peppers.</p>
-                </div>
-            </div>
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-            <!-- Oman -->
-            <div class="product-card">
-                <div class="product-card-content">
-                    <span class="card-tag">Regional Import - Oman</span>
-                    <h3>Regional Farm Produce</h3>
-                    <p>Regular supplies of fresh regional vegetables and agricultural commodities.</p>
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+            line-height: 1.6;
+        }
+
+        /* Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        /* Glassmorphism Card Design */
+        .product-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: #10b981;
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .product-card-content h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .product-card-content p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .product-card-content p strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* --- Floating WhatsApp CTA --- */
+        .whatsapp-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-cta:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- Responsive Styles --- */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .products {
+                padding: 60px 15px;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Al Aweer Central Market, Dubai</span>
+            <h1>Today Harvest <span>Trading LLC</span></h1>
+            <p>Your trusted enterprise partner for direct fresh produce imports, B2B wholesale, and international agricultural supply chains.</p>
+        </div>
+    </header>
+
+    <!-- Global Sourcing & Import Network Section -->
+    <section class="products" id="products">
+        <div class="section-container">
+            <h2 class="section-title">Global Sourcing & Import Network</h2>
+            <p class="section-subtitle">Directly importing premium quality fresh fruits, vegetables, dates, and exotics from trusted agricultural hubs across the world to Al Aweer Central Market, Dubai.</p>
+            
+            <div class="product-grid">
+                <!-- UAE Local -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">UAE - Local Farms</span>
+                        <h3>Fresh Local Produce & Berries</h3>
+                        <p><strong>Vegetables:</strong> Local Tomatoes, Cucumbers, Mini Cucumbers, and fresh Leafy Vegetables including Coriander leaves.</p>
+                        <p><strong>Seasonal Berries:</strong> Fresh Strawberries and Blackberries.</p>
+                    </div>
+                </div>
+
+                <!-- India -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - India</span>
+                        <h3>Staples, Bananas & Seasonals</h3>
+                        <p><strong>Vegetables & Roots:</strong> Onions, Small Onions, Green Chillies, Tomatoes, Coconuts, Ginger, Garlic, Yam (ചേന), Arbi (ചേമ്പ്), Cucumbers, Red Pumpkin, Mixed Vegetables, Curry Leaves.</p>
+                        <p><strong>Fruits:</strong> Green Banana, Yellow Banana, Rasakadali Banana, Pomegranate, Pineapple.</p>
+                        <p><strong>Seasonal:</strong> Premium Mangoes & Grapes (White, Black, Red).</p>
+                    </div>
+                </div>
+
+                <!-- Sri Lanka -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Sri Lanka</span>
+                        <h3>Tender Coconuts & Tropicals</h3>
+                        <p><strong>Coconuts:</strong> Fresh Tender Coconuts sourced for supreme quality.</p>
+                        <p><strong>Fruits & Roots:</strong> Red Papaya, Green Papaya, Fresh Tapioca (കപ്പ), and Pineapple.</p>
+                    </div>
+                </div>
+
+                <!-- Iran -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Iran</span>
+                        <h3>Tomatoes & Quality Vegetables</h3>
+                        <p><strong>Core Supply:</strong> Premium quality fresh Tomatoes (Primary Source), White Onions, and Regular Red Onions.</p>
+                        <p><strong>Vegetables:</strong> Cabbage, Cauliflower, Beetroot, and Broccoli.</p>
+                    </div>
+                </div>
+
+                <!-- Pakistan -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Pakistan</span>
+                        <h3>Bulk Staples & Seasonals</h3>
+                        <p><strong>Staples:</strong> High-volume bulk Potatoes and Onions supplied regularly.</p>
+                        <p><strong>Seasonal:</strong> World-renowned Pakistani Kinnow Oranges and juicy Mangoes.</p>
+                    </div>
+                </div>
+
+                <!-- Egypt -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Egypt</span>
+                        <h3>Citrus & Farm Produce</h3>
+                        <p><strong>Citrus:</strong> Premium Egyptian Valencia Oranges and fresh Lemons.</p>
+                        <p><strong>Produce:</strong> Fresh Tomatoes and high-grade agricultural items.</p>
+                    </div>
+                </div>
+
+                <!-- China -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - China</span>
+                        <h3>Garlic, Apples & Exotics</h3>
+                        <p><strong>Garlic Varieties:</strong> Pure White Garlic, Normal White Garlic, and Peeled Garlic in bulk.</p>
+                        <p><strong>Fruits:</strong> Fresh Apples, Oranges, Multi-grade Grapes, Red & White Dragon Fruits.</p>
+                        <p><strong>Roots:</strong> Carrots, Ginger, and Arbi (ചേമ്പ്).</p>
+                    </div>
+                </div>
+
+                <!-- Vietnam -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Vietnam</span>
+                        <h3>Exotics & Tropical Fruits</h3>
+                        <p><strong>Fruits:</strong> Premium Red & White Dragon Fruits.</p>
+                        <p><strong>Specialties:</strong> Young Coconuts, Limes, and Fresh Ginger.</p>
+                    </div>
+                </div>
+
+                <!-- Mexico, Kenya & Uganda -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Global</span>
+                        <h3>Avocados</h3>
+                        <p><strong>Sourcing Hubs:</strong> Premium quality Avocados sourced directly from Mexico, Kenya, and Uganda.</p>
+                    </div>
+                </div>
+
+                <!-- Dates Hubs: Saudi, Jordan, Palestine -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Direct Import - Middle East</span>
+                        <h3>Premium Dates & Bell Peppers</h3>
+                        <p><strong>Dates:</strong> High-quality premium Dates sourced from Saudi Arabia, Jordan, and Palestine.</p>
+                        <p><strong>Vegetables:</strong> Fresh Bell Peppers.</p>
+                    </div>
+                </div>
+
+                <!-- Oman -->
+                <div class="product-card">
+                    <div class="product-card-content">
+                        <span class="card-tag">Regional Import - Oman</span>
+                        <h3>Regional Farm Produce</h3>
+                        <p>Regular supplies of fresh regional vegetables and agricultural commodities.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/" class="whatsapp-cta" target="_blank" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
