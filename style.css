@@ -57,7 +57,7 @@ nav {
     position: relative;
 }
 
-/* Overlapping & Modern Logo Effect (No animation bounce) */
+/* Full Logo Display Setup */
 .logo {
     display: flex;
     align-items: center;
@@ -66,17 +66,18 @@ nav {
 }
 
 .logo img {
-    height: 110px;
-    max-width: 280px;
+    height: 75px;            /* ലോഗോയുടെ പെർഫെക്റ്റ് ഹൈറ്റ് */
+    width: auto;             /* നീളം അനുസരിച്ച് തനിയെ ക്രമീകരിക്കാൻ */
+    max-width: 100%;         /* മുറിഞ്ഞുപോകാതിരിക്കാൻ */
     object-fit: contain;
     display: block;
-    margin-top: 35px;
-    filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.18));
+    margin-top: 15px;        /* ഹെഡറിന് പുറത്തേക്ക് ചെറുതായി ഇറങ്ങിനിൽക്കാൻ */
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.15));
     transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .nav-links {
@@ -365,8 +366,8 @@ footer p {
         gap: 20px;
     }
     .logo img {
-        height: 80px;
-        margin-top: 10px;
+        height: 55px;
+        margin-top: 5px;
     }
     header {
         height: 65px;
