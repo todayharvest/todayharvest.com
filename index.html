@@ -3,356 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today Harvest Trading LLC | Fresh Fruits & Vegetables Wholesale Al Aweer Dubai</title>
-    <!-- SEO Meta Tags for Google Ranking -->
-    <meta name="description" content="Today Harvest Trading LLC is a leading fresh fruits and vegetables wholesale and import-export company located in Al Aweer Fruit and Vegetable Market, Dubai, UAE.">
-    <meta name="keywords" content="Today Harvest Trading LLC, Al Aweer Vegetable Market Wholesale Dubai, Fresh Vegetables Import Export UAE, Fruit Supplier Dubai, Commission Agent Al Aweer">
+    <title>Today Harvest Trading LLC | Al Aweer Dubai</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Today Harvest Trading LLC - Fresh fruits & vegetables wholesale and import-export at Al Aweer Fruit and Vegetable Market, Dubai, UAE.">
+    <meta name="keywords" content="Today Harvest Trading LLC, Al Aweer Vegetable Market Wholesale Dubai, Fresh Vegetables Import Export UAE">
     
-    <!-- Google Fonts & Tailwind CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brandDark: '#0B132B',
-                        brandCard: '#1C2541',
-                        brandAccent: '#10B981', // Emerald Green for Fresh Look
-                        brandGold: '#F59E0B'
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(11, 19, 43, 0.95) 0%, rgba(28, 37, 65, 0.9) 100%), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
-<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandAccent selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-['Inter'] antialiased">
 
-    <!-- TOP BAR -->
-    <div class="bg-brandCard border-b border-gray-800 text-xs py-2 px-4 sm:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
-        <div class="flex items-center gap-4">
-            <span><i class="fas fa-map-marker-alt text-brandAccent mr-1"></i> Al Aweer Fruit & Vegetable Market, Dubai, UAE</span>
-            <span><i class="fas fa-envelope text-brandAccent mr-1"></i> todayharvesttrading@gmail.com</span>
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 sm:px-10 flex flex-col sm:flex-row justify-between items-center gap-2 text-slate-400">
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+            <span><i class="fas fa-map-marker-alt text-emerald-400 mr-1"></i> Al Aweer Fruit & Vegetable Market, Dubai</span>
+            <span><i class="fas fa-envelope text-emerald-400 mr-1"></i> todayharvesttrading@gmail.com</span>
         </div>
-        <div class="flex items-center gap-4">
-            <span><i class="fas fa-phone-alt text-brandAccent mr-1"></i> +971 5X XXX XXXX</span>
-            <span class="bg-brandAccent/20 text-brandAccent px-2 py-0.5 rounded font-semibold uppercase tracking-wider">SHAMS Licensed</span>
+        <div class="flex items-center gap-3">
+            <span class="text-emerald-400 font-medium"><i class="fas fa-shield-alt mr-1"></i> SHAMS Licensed</span>
         </div>
     </div>
 
-    <!-- NAVBAR -->
-    <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-gray-800 px-4 sm:px-12 py-4 flex justify-between items-center">
-        <a href="#" class="flex items-center gap-2">
-            <div class="w-10 h-10 rounded-lg bg-brandAccent flex items-center justify-center text-brandDark font-extrabold text-xl shadow-lg shadow-brandAccent/20">TH</div>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 px-4 sm:px-10 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 font-black text-xl flex items-center justify-center shadow-lg shadow-emerald-500/20">TH</div>
             <div>
-                <span class="text-lg font-bold tracking-tight block leading-tight text-white">TODAY HARVEST</span>
-                <span class="text-[10px] text-brandAccent tracking-widest uppercase font-semibold">Trading LLC</span>
+                <span class="text-base font-bold tracking-tight block leading-none text-white">TODAY HARVEST</span>
+                <span class="text-[10px] text-emerald-400 tracking-widest font-semibold uppercase">Trading LLC</span>
             </div>
-        </a>
-        <div class="hidden md:flex items-center gap-8 font-medium text-sm">
-            <a href="#home" class="hover:text-brandAccent transition">Home</a>
-            <a href="#about" class="hover:text-brandAccent transition">About Us</a>
-            <a href="#products" class="hover:text-brandAccent transition">Products & Sourcing</a>
-            <a href="#services" class="hover:text-brandAccent transition">Wholesale & Import</a>
-            <a href="#contact" class="bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-brandAccent/20">Connect Hub</a>
         </div>
-        <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none">
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+            <a href="#about" class="hover:text-emerald-400 transition">About Us</a>
+            <a href="#products" class="hover:text-emerald-400 transition">Products</a>
+            <a href="#contact" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition shadow-md shadow-emerald-500/20">Contact Us</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-xl text-slate-300 focus:outline-none">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
 
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-gray-800 px-6 py-4 space-y-3">
-        <a href="#home" class="block hover:text-brandAccent">Home</a>
-        <a href="#about" class="block hover:text-brandAccent">About Us</a>
-        <a href="#products" class="block hover:text-brandAccent">Products & Sourcing</a>
-        <a href="#services" class="block hover:text-brandAccent">Wholesale & Import</a>
-        <a href="#contact" class="block bg-brandAccent text-brandDark text-center font-bold py-2 rounded-lg">Connect Hub</a>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 text-sm">
+        <a href="#home" class="block hover:text-emerald-400">Home</a>
+        <a href="#about" class="block hover:text-emerald-400">About Us</a>
+        <a href="#products" class="block hover:text-emerald-400">Products</a>
+        <a href="#contact" class="block bg-emerald-500 text-slate-950 font-bold py-2 text-center rounded-lg">Contact Us</a>
     </div>
 
-    <!-- HERO SECTION -->
-    <header id="home" class="hero-gradient min-h-[85vh] flex items-center px-4 sm:px-12 py-20 relative">
-        <div class="max-w-4xl mx-auto text-center space-y-6">
-            <span class="inline-block bg-brandAccent/10 text-brandAccent border border-brandAccent/30 text-xs sm:text-sm px-4 py-1.5 rounded-full font-semibold uppercase tracking-widest">
-                Premier B2B Produce Hub in Al Aweer Dubai
+    <!-- Hero Section -->
+    <header id="home" class="relative py-24 sm:py-32 px-4 sm:px-10 text-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 border-b border-slate-900">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <span class="inline-block bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full border border-emerald-500/20">
+                Al Aweer Fruit & Vegetable Market • Dubai
             </span>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
-                Freshness Delivered, <br><span class="text-brandAccent">Globally Sourced</span> for UAE.
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Fresh Produce, <br><span class="text-emerald-400">Trusted Global Sourcing</span>
             </h1>
-            <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                Today Harvest Trading LLC stands as a trusted name in the Al Aweer Fruit & Vegetable Market, bringing farm-fresh quality produce directly to wholesale buyers, supermarkets, and distributors.
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Today Harvest Trading LLC is your reliable wholesale partner for fresh fruits and vegetables, operating directly from the heart of Dubai's main produce market.
             </p>
-            <div class="flex flex-wrap justify-center gap-4 pt-4">
-                <a href="#products" class="bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-brandAccent/20 flex items-center gap-2">
-                    Explore Products <i class="fas fa-arrow-right"></i>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="#products" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-emerald-500/20">
+                    Our Products
                 </a>
-                <a href="#contact" class="bg-brandCard hover:bg-gray-800 border border-gray-700 font-bold px-8 py-4 rounded-xl transition">
-                    Partner With Us
+                <a href="#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-bold px-8 py-3.5 rounded-xl transition">
+                    Get in Touch
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- STATS STRIP -->
-    <section class="bg-brandCard border-y border-gray-800 py-8 px-4 sm:px-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="space-y-1">
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-brandAccent">Al Aweer</h3>
-                <p class="text-xs sm:text-sm text-gray-400">Core Market Base</p>
-            </div>
-            <div class="space-y-1">
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">100%</h3>
-                <p class="text-xs sm:text-sm text-gray-400">Quality Verified Produce</p>
-            </div>
-            <div class="space-y-1">
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-brandAccent">B2B</h3>
-                <p class="text-xs sm:text-sm text-gray-400">Wholesale & Commission Agent</p>
-            </div>
-            <div class="space-y-1">
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Global</h3>
-                <p class="text-xs sm:text-sm text-gray-400">Import & Export Network</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPANDED ABOUT US -->
-    <section id="about" class="py-20 px-4 sm:px-12 max-w-7xl mx-auto">
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-10 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">About Today Harvest Trading LLC</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                    Rooted in Trust, Driven by Excellence in Al Aweer Market.
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">About Our Company</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                    Committed to Quality and Freshness in Dubai.
                 </h2>
-                <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Registered under Sharjah Media City (SHAMS) and operating from the heart of the Dubai Fruit and Vegetable Market in Al Aweer, **Today Harvest Trading LLC** specializes in the wholesale distribution, import, and export of premium-grade fruits and vegetables.
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Based in the Al Aweer Fruit and Vegetable Market and registered under Sharjah Media City (SHAMS), **Today Harvest Trading LLC** specializes in the import, export, and wholesale distribution of top-grade fruits and vegetables.
                 </p>
-                <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Our deep connections with international farms and local distribution channels allow us to maintain a consistent supply chain. Whether supplying high-volume supermarket chains or independent grocery stores, we ensure uncompromised freshness, competitive pricing, and reliable execution.
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    We bridge the gap between global agricultural farms and local markets, ensuring uncompromised quality, fair pricing, and seamless supply chain execution for all our B2B clients.
                 </p>
                 <div class="grid grid-cols-2 gap-4 pt-2">
-                    <div class="flex items-center gap-3 bg-brandCard p-4 rounded-xl border border-gray-800">
-                        <i class="fas fa-shield-alt text-brandAccent text-xl"></i>
-                        <span class="font-semibold text-sm">Strict Quality Control</span>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <i class="fas fa-check-circle text-emerald-400 text-lg mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Strict Quality Check</h4>
+                        <p class="text-xs text-slate-400">Hand-inspected produce.</p>
                     </div>
-                    <div class="flex items-center gap-3 bg-brandCard p-4 rounded-xl border border-gray-800">
-                        <i class="fas fa-globe text-brandAccent text-xl"></i>
-                        <span class="font-semibold text-sm">Global Farm Sourcing</span>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <i class="fas fa-globe text-emerald-400 text-lg mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Global Network</h4>
+                        <p class="text-xs text-slate-400">Sourced worldwide.</p>
                     </div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="absolute -inset-2 bg-gradient-to-r from-brandAccent to-emerald-600 rounded-3xl blur-lg opacity-30"></div>
-                <div class="relative bg-brandCard p-8 rounded-3xl border border-gray-800 space-y-6">
-                    <h3 class="text-xl font-bold text-white border-b border-gray-800 pb-4">Core Operational Pillars</h3>
-                    <ul class="space-y-4 text-sm text-gray-300">
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
-                            <div><strong>Strategic Location:</strong> Situated in Al Aweer Dubai, enabling fast dispatch and convenient logistics access.</div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
-                            <div><strong>B2B Specialization:</strong> Tailored supply solutions for hotels, restaurants, hypermarkets, and wholesale vendors.</div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
-                            <div><strong>Transparent Trading:</strong> Fair commission-based trading and direct import partnerships worldwide.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEDICATED PRODUCT GALLERY SECTION -->
-    <section id="products" class="bg-brandCard/50 py-20 px-4 sm:px-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto space-y-12">
-            <div class="text-center space-y-3">
-                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Our Product Portfolio</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Fresh Fruits & Vegetables</h2>
-                <p class="text-gray-400 max-w-xl mx-auto text-sm">Sourced globally from premier agricultural regions, hand-inspected for perfection.</p>
-            </div>
-
-            <!-- Product Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80" alt="Fresh Fruits" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Global Import</span>
-                    </div>
-                    <div class="p-6 space-y-3">
-                        <h3 class="text-xl font-bold text-white">Premium Fresh Fruits</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Seasonal and exotic fruits sourced directly from certified orchards worldwide, ensuring peak ripeness and extended shelf life.</p>
-                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
-                            <span>High Volume Available</span>
-                            <span><i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Daily Stock</span>
-                    </div>
-                    <div class="p-6 space-y-3">
-                        <h3 class="text-xl font-bold text-white">Farm-Fresh Vegetables</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Crisp, farm-fresh local and imported vegetables sorted and packed under strict hygiene standards for commercial kitchens and markets.</p>
-                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
-                            <span>Al Aweer Market Ready</span>
-                            <span><i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80" alt="Bulk Sourcing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Custom Orders</span>
-                    </div>
-                    <div class="p-6 space-y-3">
-                        <h3 class="text-xl font-bold text-white">Bulk & Custom Supply</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Specialized wholesale packages configured according to specific volume, grading, and packaging requirements for institutional buyers.</p>
-                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
-                            <span>Custom Grading</span>
-                            <span><i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 space-y-6">
+                <h3 class="text-lg font-bold text-white border-b border-slate-800 pb-4">Core Strengths</h3>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-arrow-right text-emerald-400 mt-1"></i>
+                        <span>Strategic location in Al Aweer Market for rapid distribution.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-arrow-right text-emerald-400 mt-1"></i>
+                        <span>Tailored B2B supply solutions for hypermarkets and restaurants.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-arrow-right text-emerald-400 mt-1"></i>
+                        <span>Transparent commission-based trading and import partnerships.</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES / WHY CHOOSE US -->
-    <section id="services" class="py-20 px-4 sm:px-12 max-w-7xl mx-auto space-y-12">
-        <div class="text-center space-y-3">
-            <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Why Partner With Us</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The Today Harvest Advantage</h2>
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 sm:px-10 max-w-6xl mx-auto border-t border-slate-900">
+        <div class="text-center space-y-3 mb-12">
+            <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">What We Offer</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Fresh Fruits & Vegetables</h2>
+            <p class="text-slate-400 text-sm max-w-md mx-auto">Sourced globally and delivered fresh to meet commercial demands.</p>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
-                    <i class="fas fa-truck-loading"></i>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 space-y-4 hover:border-emerald-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-apple-alt"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white">Seamless Logistics</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Optimized supply chains ensuring timely delivery straight from Al Aweer market bays to your warehouse or retail location.</p>
+                <h3 class="text-xl font-bold text-white">Fresh Fruits</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Imported seasonal and exotic fruits packed with freshness, flavor, and extended shelf life.</p>
             </div>
-            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
-                    <i class="fas fa-handshake"></i>
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 space-y-4 hover:border-emerald-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-carrot"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white">Trusted Commission Agent</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Transparent dealings, dependable pricing structures, and robust support for farmers, importers, and buyers alike.</p>
+                <h3 class="text-xl font-bold text-white">Fresh Vegetables</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Crisp, farm-fresh vegetables sorted and prepared for wholesale vendors and kitchens.</p>
             </div>
-            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
-                    <i class="fas fa-award"></i>
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 space-y-4 hover:border-emerald-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-boxes"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white">Verified Standards</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Adherence to UAE regulatory standards with stringent quality sorting to guarantee high market acceptance.</p>
+                <h3 class="text-xl font-bold text-white">Bulk Wholesale</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Customized bulk packaging and grading solutions designed for large-scale buyers.</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & CONNECT HUB -->
-    <section id="contact" class="bg-brandCard py-20 px-4 sm:px-12 border-t border-gray-800">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-10 max-w-5xl mx-auto border-t border-slate-900">
+        <div class="grid md:grid-cols-2 gap-12 bg-slate-900 p-8 sm:p-12 rounded-3xl border border-slate-800">
             <div class="space-y-6">
-                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Get in Touch</span>
-                <h2 class="text-3xl font-extrabold text-white">Let's Discuss Your Supply Needs</h2>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Whether you are looking to source high-volume fresh produce or require a dependable trade partner in Al Aweer Market, our team is ready to assist you.
+                <div>
+                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Reach Out</span>
+                    <h2 class="text-3xl font-bold text-white mt-1">Contact Today Harvest</h2>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Get in touch with our team in Al Aweer Market for wholesale inquiries, partnership opportunities, or daily stock availability.
                 </p>
                 <div class="space-y-4 text-sm">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <strong class="block text-white">Location</strong>
-                            <span class="text-gray-400">Al Aweer Fruit & Vegetable Market, Dubai, UAE</span>
-                        </div>
+                    <div class="flex items-center gap-3 text-slate-300">
+                        <i class="fas fa-map-marker-alt text-emerald-400 w-5"></i>
+                        <span>Al Aweer Fruit & Vegetable Market, Dubai, UAE</span>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <strong class="block text-white">Email Address</strong>
-                            <span class="text-gray-400">todayharvesttrading@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <strong class="block text-white">Direct Line</strong>
-                            <span class="text-gray-400">+971 5X XXX XXXX</span>
-                        </div>
+                    <div class="flex items-center gap-3 text-slate-300">
+                        <i class="fas fa-envelope text-emerald-400 w-5"></i>
+                        <span>todayharvesttrading@gmail.com</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Quick Inquiry Form -->
-            <div class="bg-brandDark p-8 rounded-2xl border border-gray-800 space-y-4">
-                <h3 class="text-xl font-bold text-white">Send Quick Inquiry</h3>
-                <form onsubmit="handleSubmit(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 mb-1">Your Name</label>
-                        <input type="text" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="John Doe">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 mb-1">Phone / WhatsApp</label>
-                        <input type="text" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="+971 50 XXXXXXX">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-gray-400 mb-1">Requirement / Message</label>
-                        <textarea rows="3" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="Mention fruits/vegetables requirement..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold py-3.5 rounded-xl transition shadow-lg shadow-brandAccent/20">
-                        Submit Inquiry
-                    </button>
-                </form>
-            </div>
+            <form onsubmit="handleForm(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-1">Your Name</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-1">Phone Number</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-1">Message</label>
+                    <textarea rows="3" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl transition shadow-md shadow-emerald-500/20">
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-brandDark border-t border-gray-800 py-8 px-4 sm:px-12 text-center text-xs text-gray-500 space-y-2">
-        <p>&copy; 2026 Today Harvest Trading LLC. All Rights Reserved. Registered under Sharjah Media City (SHAMS).</p>
-        <p>Al Aweer Fruit and Vegetable Market, Dubai, United Arab Emirates.</p>
+    <!-- Footer -->
+    <footer class="py-8 px-4 text-center text-xs text-slate-500 border-t border-slate-900">
+        <p>&copy; 2026 Today Harvest Trading LLC. All Rights Reserved. Registered under SHAMS.</p>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script>
-        // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Form Submit Handler
-        function handleSubmit(e) {
+        function handleForm(e) {
             e.preventDefault();
-            alert('Thank you! Your inquiry has been submitted successfully to Today Harvest Trading LLC.');
+            alert('Thank you! Your message has been sent successfully.');
             e.target.reset();
         }
     </script>
