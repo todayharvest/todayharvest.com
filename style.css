@@ -57,33 +57,26 @@ nav {
     position: relative;
 }
 
-/* Floating & Separated Logo Effect */
+/* Overlapping & Modern Logo Effect (No animation bounce) */
 .logo {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 10;
-}
-
-@keyframes logoFloat {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0px); }
+    z-index: 1001;
 }
 
 .logo img {
-    height: 90px;
-    max-width: 260px;
+    height: 110px;
+    max-width: 280px;
     object-fit: contain;
     display: block;
-    margin-top: 10px;
-    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.15));
-    animation: logoFloat 4s ease-in-out infinite;
+    margin-top: 35px;
+    filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.18));
     transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -372,8 +365,8 @@ footer p {
         gap: 20px;
     }
     .logo img {
-        height: 70px;
-        margin-top: 0;
+        height: 80px;
+        margin-top: 10px;
     }
     header {
         height: 65px;
