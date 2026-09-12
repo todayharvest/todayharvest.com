@@ -3,856 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today Harvest Trading LLC | Ultra-Premium Global Enterprise</title>
-    <!-- Google Fonts & FontAwesome Icons -->
+    <title>Today Harvest Trading LLC | Fresh Fruits & Vegetables Wholesale Al Aweer Dubai</title>
+    <!-- SEO Meta Tags for Google Ranking -->
+    <meta name="description" content="Today Harvest Trading LLC is a leading fresh fruits and vegetables wholesale and import-export company located in Al Aweer Fruit and Vegetable Market, Dubai, UAE.">
+    <meta name="keywords" content="Today Harvest Trading LLC, Al Aweer Vegetable Market Wholesale Dubai, Fresh Vegetables Import Export UAE, Fruit Supplier Dubai, Commission Agent Al Aweer">
+    
+    <!-- Google Fonts & Tailwind CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        /* ==========================================================
-           TODAY HARVEST TRADING LLC - ULTRA-PREMIUM GLOBAL ENTERPRISE
-           ================================================---------- */
-
-        :root {
-            --enterprise-navy: #07192f;      /* Deep Luxury Midnight Blue */
-            --enterprise-blue: #0f2c42;      /* Primary Brand Blue */
-            --enterprise-green: #10b981;     /* Vibrant Modern Emerald Green */
-            --enterprise-green-dark: #059669;/* Rich Green Hover */
-            --accent-gold: #d97706;         /* Premium Accent Gold */
-            --surface-light: #f8fafc;        /* Soft Clean Surface */
-            --surface-white: #ffffff;        /* Pure White */
-            --text-primary: #0f172a;       /* Deep Slate Main Text */
-            --text-muted: #64748b;         /* Professional Subtext */
-            --glass-bg: rgba(255, 255, 255, 0.85);
-            --glass-border: rgba(255, 255, 255, 0.18);
-            
-            --shadow-soft: 0 10px 30px -5px rgba(15, 23, 42, 0.06);
-            --shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.12);
-            --shadow-glow: 0 0 25px rgba(16, 185, 129, 0.2);
-            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: var(--text-primary);
-            background-color: var(--surface-white);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        /* --- Ultra-Clean Global Top Announcement Bar --- */
-        .top-bar {
-            background: var(--enterprise-navy);
-            color: #cbd5e1;
-            padding: 12px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .top-bar-left, .top-bar-right {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .top-bar span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .top-bar i {
-            color: var(--enterprise-green);
-            font-size: 14px;
-        }
-
-        /* --- Elite Sticky Glassmorphism Header --- */
-        header {
-            background: var(--glass-bg);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            box-shadow: var(--shadow-soft);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            height: 90px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #e2e8f0;
-            transition: var(--transition-smooth);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 6%;
-            width: 100%;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 58px;
-            width: auto;
-            object-fit: contain;
-            display: block;
-            transition: var(--transition-smooth);
-        }
-
-        .logo img:hover {
-            transform: scale(1.03);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 35px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-primary);
-            font-weight: 600;
-            font-size: 15px;
-            transition: var(--transition-smooth);
-            position: relative;
-            padding: 6px 0;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--enterprise-green);
-            transition: width 0.3s ease;
-            border-radius: 2px;
-        }
-
-        .nav-links a:hover {
-            color: var(--enterprise-green);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .btn-header {
-            background: linear-gradient(135deg, var(--enterprise-green), var(--enterprise-green-dark));
-            color: var(--surface-white);
-            padding: 12px 26px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-            transition: var(--transition-smooth);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-header:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-glow);
-        }
-
-        /* --- Immersive Cinematic Hero Section --- */
-        .hero {
-            background: linear-gradient(135deg, rgba(7, 25, 47, 0.88), rgba(15, 44, 66, 0.82)), url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1920&q=85');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--surface-white);
-            padding: 0 20px;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: linear-gradient(to top, rgba(255,255,255,1), transparent);
-        }
-
-        .hero-content {
-            max-width: 950px;
-            z-index: 2;
-            position: relative;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(16, 185, 129, 0.15);
-            border: 1px solid rgba(16, 185, 129, 0.4);
-            padding: 8px 18px;
-            border-radius: 30px;
-            color: #34d399;
-            font-weight: 600;
-            font-size: 13px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(5px);
-        }
-
-        .hero-content h1 {
-            font-size: 52px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-            line-height: 1.15;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.4);
-        }
-
-        .hero-content p {
-            font-size: 20px;
-            max-width: 780px;
-            margin: 0 auto 40px;
-            color: #cbd5e1;
-            font-weight: 400;
-        }
-
-        .hero-btns {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--enterprise-green), var(--enterprise-green-dark));
-            color: var(--surface-white);
-            padding: 16px 36px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 16px;
-            transition: var(--transition-smooth);
-            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            color: var(--surface-white);
-            padding: 16px 36px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 16px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            transition: var(--transition-smooth);
-        }
-
-        .btn-primary:hover, .btn-secondary:hover {
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: var(--surface-white);
-        }
-
-        /* --- World-Class Stats Grid --- */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            background: var(--surface-white);
-            padding: 60px 6%;
-            gap: 30px;
-            text-align: center;
-            position: relative;
-            z-index: 3;
-            margin-top: -50px;
-        }
-
-        .stat-item {
-            background: var(--surface-light);
-            padding: 35px 25px;
-            border-radius: 20px;
-            box-shadow: var(--shadow-soft);
-            border: 1px solid #e2e8f0;
-            transition: var(--transition-smooth);
-        }
-
-        .stat-item:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--enterprise-green);
-            background: var(--surface-white);
-        }
-
-        .stat-item h2 {
-            font-size: 42px;
-            color: var(--enterprise-blue);
-            font-weight: 800;
-            margin-bottom: 8px;
-        }
-
-        .stat-item p {
-            font-weight: 600;
-            color: var(--text-muted);
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* --- Enterprise About Section (Updated with Al Aweer Insights) --- */
-        .about {
-            padding: 120px 6%;
-            display: flex;
-            gap: 70px;
-            align-items: center;
-            background: var(--surface-white);
-        }
-
-        .about-img {
-            flex: 1;
-            position: relative;
-        }
-
-        .about-img img {
-            width: 100%;
-            max-width: 580px;
-            border-radius: 24px;
-            box-shadow: var(--shadow-hover);
-            object-fit: cover;
-            border: 4px solid var(--surface-light);
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2 {
-            font-size: 40px;
-            color: var(--enterprise-blue);
-            margin-bottom: 24px;
-            font-weight: 800;
-            line-height: 1.25;
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-            color: var(--text-muted);
-            font-size: 17px;
-        }
-
-        /* --- High-End Products Showcase (Clean & Categorized) --- */
-        .products {
-            background-color: var(--surface-light);
-            padding: 120px 6%;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 42px;
-            color: var(--enterprise-blue);
-            margin-bottom: 15px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .section-subtitle {
-            color: var(--text-muted);
-            font-size: 17px;
-            margin-bottom: 60px;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 35px;
-            text-align: left;
-        }
-
-        .product-card {
-            background: var(--surface-white);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: var(--shadow-soft);
-            transition: var(--transition-smooth);
-            border: 1px solid #e2e8f0;
-            padding: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--enterprise-green);
-        }
-
-        .product-card-content h3 {
-            color: var(--enterprise-blue);
-            font-size: 22px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .product-card-content p {
-            color: var(--text-muted);
-            font-size: 15px;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .card-tag {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--enterprise-green);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.3px;
-            margin-bottom: 20px;
-        }
-
-        /* Collapsible List styling for full item list */
-        .collapsible-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-        }
-
-        .collapsible-content.open {
-            max-height: 500px;
-        }
-
-        .view-more-btn {
-            background: transparent;
-            border: 2px solid var(--enterprise-green);
-            color: var(--enterprise-green);
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transition-smooth);
-            margin-top: 15px;
-            align-self: flex-start;
-        }
-
-        .view-more-btn:hover {
-            background: var(--enterprise-green);
-            color: white;
-        }
-
-        /* --- Enterprise Features Section --- */
-        .features {
-            padding: 120px 6%;
-            text-align: center;
-            background: var(--surface-white);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            margin-top: 60px;
-        }
-
-        .feature-box {
-            padding: 45px 35px;
-            background: var(--surface-light);
-            border: 1px solid #e2e8f0;
-            border-radius: 20px;
-            transition: var(--transition-smooth);
-            text-align: center;
-        }
-
-        .feature-box:hover {
-            background: var(--surface-white);
-            border-color: var(--enterprise-green);
-            box-shadow: var(--shadow-hover);
-            transform: translateY(-8px);
-        }
-
-        .feature-box i {
-            font-size: 48px;
-            color: var(--enterprise-green);
-            margin-bottom: 25px;
-        }
-
-        .feature-box h3 {
-            color: var(--enterprise-blue);
-            font-size: 20px;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        .feature-box p {
-            color: var(--text-muted);
-            font-size: 15px;
-        }
-
-        /* --- Global B2B Inquiry Contact Section --- */
-        .contact {
-            background: linear-gradient(135deg, rgba(7, 25, 47, 0.95), rgba(15, 44, 66, 0.9)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1920&q=85');
-            background-size: cover;
-            background-position: center;
-            color: var(--surface-white);
-            padding: 120px 6%;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
-        .contact p {
-            max-width: 700px;
-            margin: 0 auto 40px;
-            color: #cbd5e1;
-            font-size: 18px;
-        }
-
-        /* --- Elite Footer --- */
-        footer {
-            background-color: var(--enterprise-navy);
-            color: #94a3b8;
-            padding: 60px 6% 30px;
-            text-align: center;
-            border-top: 4px solid var(--enterprise-green);
-        }
-
-        footer p {
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        /* --- Floating WhatsApp Button with Pulse Animation --- */
-        .whatsapp-float {
-            position: fixed;
-            width: 65px;
-            height: 65px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 34px;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: var(--transition-smooth);
-            animation: pulse-green 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.12) rotate(10deg);
-        }
-
-        @keyframes pulse-green {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-
-        /* --- Responsive Layout Adjustments --- */
-        @media (max-width: 900px) {
-            .about {
-                flex-direction: column;
-                padding: 80px 5%;
-            }
-            .hero-content h1 {
-                font-size: 36px;
-            }
-            .top-bar {
-                display: none;
-            }
-            .nav-links {
-                display: none;
-            }
-            header {
-                height: 75px;
-            }
-            .stats {
-                margin-top: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Top Contact Bar -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <span><i class="fas fa-map-marker-alt"></i> Al Aweer Vegetable Market, Dubai, UAE</span>
-        </div>
-        <div class="top-bar-right">
-            <span><i class="fab fa-whatsapp"></i> +971 54 734 6335</span>
-            <span><i class="fas fa-envelope"></i> info@todayharvest.com</span>
-        </div>
-    </div>
-
-    <!-- Navigation Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#home">
-                    <img src="images/logo.png" alt="Today Harvest Trading LLC Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20have%20an%20inquiry" target="_blank" class="btn-header"><i class="fab fa-whatsapp"></i> Quick Inquiry</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-globe-americas"></i> Global Import, Commission & Wholesale Enterprise</div>
-            <h1>TODAY HARVEST TRADING LLC</h1>
-            <p>Direct Wholesale Supplier & Commission Agent at Al Aweer Vegetable Market, Dubai</p>
-            <div class="hero-btns">
-                <a href="#products" class="btn-primary">Explore Products</a>
-                <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20contact%20sales" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> Contact Sales</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Statistics -->
-    <section class="stats">
-        <div class="stat-item">
-            <h2>13+</h2>
-            <p>Global Sourcing Countries</p>
-        </div>
-        <div class="stat-item">
-            <h2>Al Aweer</h2>
-            <p>Permanent Dubai Market Hub</p>
-        </div>
-        <div class="stat-item">
-            <h2>B2B</h2>
-            <p>Supermarket & Wholesale Supply</p>
-        </div>
-        <div class="stat-item">
-            <h2>100%</h2>
-            <p>Reliable Trade Trust</p>
-        </div>
-    </section>
-
-    <!-- About Section (Reflected with Real Market Dynamics) -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Produce Wholesale Dubai">
-        </div>
-        <div class="about-text">
-            <h2>Trusted Wholesale Partner in Al Aweer Vegetable Market</h2>
-            <p>Based in the heart of Dubai's Al Aweer Vegetable Market, <strong>TODAY HARVEST TRADING LLC</strong> stands as a permanent, high-trust physical hub connecting international farms with regional supermarkets, hypermarkets, and bulk buyers.</p>
-            <p>Operating through flexible commission-based global sourcing and direct import partnerships across 13+ countries, we ensure a steady, high-quality flow of fresh produce. Unlike temporary traders, our permanent market presence guarantees complete accountability, cold-chain integrity, and hassle-free returns or exchange support for all B2B buyers.</p>
-            <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20would%20like%20to%20get%20a%20quote" target="_blank" class="btn-primary" style="display:inline-block; margin-top:10px;">Get a Quote</a>
-        </div>
-    </section>
-
-    <!-- Products / Global Sourcing Section (Redesigned with Clean Categories & View More) -->
-    <section class="products" id="products">
-        <div class="section-container">
-            <h2 class="section-title">Our Global Sourcing Categories</h2>
-            <p class="section-subtitle">We bridge elite international farms with UAE markets, offering fresh, top-tier produce through reliable wholesale distribution.</p>
-            
-            <div class="product-grid">
-                <!-- Card 1: India Sourcing -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">India Sourcing</span>
-                        <div class="product-card-content">
-                            <h3>Farm-Fresh Produce from India</h3>
-                            <p>Sourced directly from leading agricultural belts. Specializing in high-demand items like Onions, Shallots, Green Chillies, Coconuts, Ginger, and Bananas.</p>
-                            <div class="collapsible-content" id="india-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Onion, Shallots, Green Chilli, Tomato, Coconut, Ginger, Garlic, Elephant Yam, Taro/Chembu, Cucumber, Red Pumpkin, Mixed Veg, Green/Yellow/Rasakadali Bananas, Pomegranate, Pineapple, Curry Leaves, Seasonal Mangoes, White, Black & Red Grapes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('india-list', this)">View All Varieties</button>
-                </div>
-
-                <!-- Card 2: China Imports -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">China Sourcing</span>
-                        <div class="product-card-content">
-                            <h3>Imports from China</h3>
-                            <p>Premium grade garlic varieties, crisp apples, and root vegetables imported via steady cold-chain shipping channels.</p>
-                            <div class="collapsible-content" id="china-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Pure White Garlic, Normal White Garlic, Peeled Garlic, Apples, Oranges, Mixed Grapes, Red & White Dragon Fruit, Carrot, Ginger, Taro.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('china-list', this)">View All Varieties</button>
-                </div>
-
-                <!-- Card 3: Middle East Dates & Produce -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">Middle East Sourcing</span>
-                        <div class="product-card-content">
-                            <h3>Dates & Regional Specialties</h3>
-                            <p>Authentic and premium quality dates and fresh field crops sourced from Saudi Arabia, Jordan, and Palestine.</p>
-                            <div class="collapsible-content" id="me-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> Saudi Arabia Premium Dates, Jordan Date Varieties & Bell Peppers, Palestine Specialty Dates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('me-list', this)">View All Varieties</button>
-                </div>
-
-                <!-- Card 4: Egypt, Pakistan & Iran -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">Asia & North Africa</span>
-                        <div class="product-card-content">
-                            <h3>Egypt, Pakistan & Iran Supply</h3>
-                            <p>High-volume seasonal shipments including Valencia oranges, Pakistani Kinnow, bulk onions, and key tomato supplies from Iran.</p>
-                            <div class="collapsible-content" id="egypt-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>Egypt:</strong> Valencia Oranges, Fresh Lemons, Tomatoes. <strong>Pakistan:</strong> Potatoes, Bulk Onions, Kinnow Oranges, Mangoes. <strong>Iran:</strong> Tomatoes, Onions, Cabbage, Cauliflower, Beetroot, Broccoli.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('egypt-list', this)">View All Varieties</button>
-                </div>
-
-                <!-- Card 5: Vietnam, Sri Lanka & Tropics -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">Tropical Imports</span>
-                        <div class="product-card-content">
-                            <h3>Vietnam & Sri Lanka Exotics</h3>
-                            <p>Fresh tropical fruits, tender green coconuts, and specialized farm yields from Southeast Asian and South Asian growers.</p>
-                            <div class="collapsible-content" id="vietnam-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>Vietnam:</strong> Dragon Fruit, Young Coconuts, Limes, Ginger. <strong>Sri Lanka:</strong> Tender Coconuts, Papaya, Tapioca (Kappa), Pineapple.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('vietnam-list', this)">View All Varieties</button>
-                </div>
-
-                <!-- Card 6: UAE Farms & Global Avocados -->
-                <div class="product-card">
-                    <div>
-                        <span class="card-tag">Local & Specialty</span>
-                        <div class="product-card-content">
-                            <h3>UAE Farms & Global Avocados</h3>
-                            <p>Fresh local greenhouse produce from UAE farms alongside premium creamy avocados sourced directly from Mexico, Kenya, and Uganda.</p>
-                            <div class="collapsible-content" id="local-list">
-                                <p style="font-size: 14px; border-top: 1px solid #e2e8f0; padding-top: 10px; margin-top: 10px;"><strong>Full Items:</strong> <strong>UAE Farms:</strong> Tomatoes, Mini Cucumber, Strawberries, Coriander leaves. <strong>Global:</strong> Premium Avocados (Mexico, Kenya, Uganda).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" onclick="toggleList('local-list', this)">View All Varieties</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="features" id="why-us">
-        <h2 class="section-title" style="color: var(--enterprise-blue);">Why Choose Today Harvest?</h2>
-        <p class="section-subtitle">Your trusted physical market partner for quality, accountability, and trade excellence.</p>
-        <div class="features-grid">
-            <div class="feature-box">
-                <i class="fas fa-store"></i>
-                <h3>Permanent Market Presence</h3>
-                <p>Located firmly in Al Aweer Market, ensuring complete accountability and reliable physical support.</p>
-            </div>
-            <div class="feature-box">
-                <i class="fas fa-handshake"></i>
-                <h3>Commission & Direct Sourcing</h3>
-                <p>Flexible and transparent trade operations backed by expert global agent networks.</p>
-            </div>
-            <div class="feature-box">
-                <i class="fas fa-undo-alt"></i>
-                <h3>Easy Return Support</h3>
-                <p>Unlike transient traders, our fixed shop setup guarantees secure and hassle-free return handling.</p>
-            </div>
-            <div class="feature-box">
-                <i class="fas fa-globe"></i>
-                <h3>Global Sourcing Network</h3>
-                <p>Robust international supply chains spanning across 13+ source countries worldwide.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section class="contact" id="contact">
-        <h2>Ready to Partner with Us?</h2>
-        <p>Visit our permanent wholesale facility at Al Aweer Vegetable Market, Dubai, or chat with our sales desk for container deals and bulk distribution.</p>
-        <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-primary" style="font-size:18px; padding: 16px 40px; display: inline-block;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Today Harvest Trading LLC. All Rights Reserved. | Al Aweer Vegetable Market, Dubai, UAE</p>
-    </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- JavaScript for View More Toggle -->
     <script>
-        function toggleList(listId, button) {
-            const list = document.getElementById(listId);
-            list.classList.toggle('open');
-            if (list.classList.contains('open')) {
-                button.textContent = 'Show Less';
-            } else {
-                button.textContent = 'View All Varieties';
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0B132B',
+                        brandCard: '#1C2541',
+                        brandAccent: '#10B981', // Emerald Green for Fresh Look
+                        brandGold: '#F59E0B'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
             }
         }
     </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.95) 0%, rgba(28, 37, 65, 0.9) 100%), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandAccent selection:text-white">
 
+    <!-- TOP BAR -->
+    <div class="bg-brandCard border-b border-gray-800 text-xs py-2 px-4 sm:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4">
+            <span><i class="fas fa-map-marker-alt text-brandAccent mr-1"></i> Al Aweer Fruit & Vegetable Market, Dubai, UAE</span>
+            <span><i class="fas fa-envelope text-brandAccent mr-1"></i> todayharvesttrading@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <span><i class="fas fa-phone-alt text-brandAccent mr-1"></i> +971 5X XXX XXXX</span>
+            <span class="bg-brandAccent/20 text-brandAccent px-2 py-0.5 rounded font-semibold uppercase tracking-wider">SHAMS Licensed</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-gray-800 px-4 sm:px-12 py-4 flex justify-between items-center">
+        <a href="#" class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-lg bg-brandAccent flex items-center justify-center text-brandDark font-extrabold text-xl shadow-lg shadow-brandAccent/20">TH</div>
+            <div>
+                <span class="text-lg font-bold tracking-tight block leading-tight text-white">TODAY HARVEST</span>
+                <span class="text-[10px] text-brandAccent tracking-widest uppercase font-semibold">Trading LLC</span>
+            </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+            <a href="#home" class="hover:text-brandAccent transition">Home</a>
+            <a href="#about" class="hover:text-brandAccent transition">About Us</a>
+            <a href="#products" class="hover:text-brandAccent transition">Products & Sourcing</a>
+            <a href="#services" class="hover:text-brandAccent transition">Wholesale & Import</a>
+            <a href="#contact" class="bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-brandAccent/20">Connect Hub</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-gray-800 px-6 py-4 space-y-3">
+        <a href="#home" class="block hover:text-brandAccent">Home</a>
+        <a href="#about" class="block hover:text-brandAccent">About Us</a>
+        <a href="#products" class="block hover:text-brandAccent">Products & Sourcing</a>
+        <a href="#services" class="block hover:text-brandAccent">Wholesale & Import</a>
+        <a href="#contact" class="block bg-brandAccent text-brandDark text-center font-bold py-2 rounded-lg">Connect Hub</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero-gradient min-h-[85vh] flex items-center px-4 sm:px-12 py-20 relative">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-brandAccent/10 text-brandAccent border border-brandAccent/30 text-xs sm:text-sm px-4 py-1.5 rounded-full font-semibold uppercase tracking-widest">
+                Premier B2B Produce Hub in Al Aweer Dubai
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                Freshness Delivered, <br><span class="text-brandAccent">Globally Sourced</span> for UAE.
+            </h1>
+            <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Today Harvest Trading LLC stands as a trusted name in the Al Aweer Fruit & Vegetable Market, bringing farm-fresh quality produce directly to wholesale buyers, supermarkets, and distributors.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#products" class="bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-brandAccent/20 flex items-center gap-2">
+                    Explore Products <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="bg-brandCard hover:bg-gray-800 border border-gray-700 font-bold px-8 py-4 rounded-xl transition">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS STRIP -->
+    <section class="bg-brandCard border-y border-gray-800 py-8 px-4 sm:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="space-y-1">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-brandAccent">Al Aweer</h3>
+                <p class="text-xs sm:text-sm text-gray-400">Core Market Base</p>
+            </div>
+            <div class="space-y-1">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">100%</h3>
+                <p class="text-xs sm:text-sm text-gray-400">Quality Verified Produce</p>
+            </div>
+            <div class="space-y-1">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-brandAccent">B2B</h3>
+                <p class="text-xs sm:text-sm text-gray-400">Wholesale & Commission Agent</p>
+            </div>
+            <div class="space-y-1">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Global</h3>
+                <p class="text-xs sm:text-sm text-gray-400">Import & Export Network</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPANDED ABOUT US -->
+    <section id="about" class="py-20 px-4 sm:px-12 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">About Today Harvest Trading LLC</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                    Rooted in Trust, Driven by Excellence in Al Aweer Market.
+                </h2>
+                <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    Registered under Sharjah Media City (SHAMS) and operating from the heart of the Dubai Fruit and Vegetable Market in Al Aweer, **Today Harvest Trading LLC** specializes in the wholesale distribution, import, and export of premium-grade fruits and vegetables.
+                </p>
+                <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    Our deep connections with international farms and local distribution channels allow us to maintain a consistent supply chain. Whether supplying high-volume supermarket chains or independent grocery stores, we ensure uncompromised freshness, competitive pricing, and reliable execution.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-center gap-3 bg-brandCard p-4 rounded-xl border border-gray-800">
+                        <i class="fas fa-shield-alt text-brandAccent text-xl"></i>
+                        <span class="font-semibold text-sm">Strict Quality Control</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-brandCard p-4 rounded-xl border border-gray-800">
+                        <i class="fas fa-globe text-brandAccent text-xl"></i>
+                        <span class="font-semibold text-sm">Global Farm Sourcing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-2 bg-gradient-to-r from-brandAccent to-emerald-600 rounded-3xl blur-lg opacity-30"></div>
+                <div class="relative bg-brandCard p-8 rounded-3xl border border-gray-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white border-b border-gray-800 pb-4">Core Operational Pillars</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
+                            <div><strong>Strategic Location:</strong> Situated in Al Aweer Dubai, enabling fast dispatch and convenient logistics access.</div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
+                            <div><strong>B2B Specialization:</strong> Tailored supply solutions for hotels, restaurants, hypermarkets, and wholesale vendors.</div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-brandAccent mt-1"></i>
+                            <div><strong>Transparent Trading:</strong> Fair commission-based trading and direct import partnerships worldwide.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEDICATED PRODUCT GALLERY SECTION -->
+    <section id="products" class="bg-brandCard/50 py-20 px-4 sm:px-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Our Product Portfolio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Fresh Fruits & Vegetables</h2>
+                <p class="text-gray-400 max-w-xl mx-auto text-sm">Sourced globally from premier agricultural regions, hand-inspected for perfection.</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80" alt="Fresh Fruits" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Global Import</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-white">Premium Fresh Fruits</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Seasonal and exotic fruits sourced directly from certified orchards worldwide, ensuring peak ripeness and extended shelf life.</p>
+                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
+                            <span>High Volume Available</span>
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Daily Stock</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-white">Farm-Fresh Vegetables</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Crisp, farm-fresh local and imported vegetables sorted and packed under strict hygiene standards for commercial kitchens and markets.</p>
+                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
+                            <span>Al Aweer Market Ready</span>
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-gray-800 hover:border-brandAccent transition group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80" alt="Bulk Sourcing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-brandDark/80 backdrop-blur-md text-xs px-3 py-1 rounded-full text-brandAccent font-semibold">Custom Orders</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-white">Bulk & Custom Supply</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Specialized wholesale packages configured according to specific volume, grading, and packaging requirements for institutional buyers.</p>
+                        <div class="pt-2 flex justify-between items-center text-xs font-semibold text-brandAccent">
+                            <span>Custom Grading</span>
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / WHY CHOOSE US -->
+    <section id="services" class="py-20 px-4 sm:px-12 max-w-7xl mx-auto space-y-12">
+        <div class="text-center space-y-3">
+            <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Why Partner With Us</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The Today Harvest Advantage</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-truck-loading"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Seamless Logistics</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Optimized supply chains ensuring timely delivery straight from Al Aweer market bays to your warehouse or retail location.</p>
+            </div>
+            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Trusted Commission Agent</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Transparent dealings, dependable pricing structures, and robust support for farmers, importers, and buyers alike.</p>
+            </div>
+            <div class="bg-brandCard p-8 rounded-2xl border border-gray-800 space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-brandAccent/10 text-brandAccent flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">Verified Standards</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Adherence to UAE regulatory standards with stringent quality sorting to guarantee high market acceptance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & CONNECT HUB -->
+    <section id="contact" class="bg-brandCard py-20 px-4 sm:px-12 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-brandAccent font-bold uppercase tracking-widest text-xs">Get in Touch</span>
+                <h2 class="text-3xl font-extrabold text-white">Let's Discuss Your Supply Needs</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Whether you are looking to source high-volume fresh produce or require a dependable trade partner in Al Aweer Market, our team is ready to assist you.
+                </p>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong class="block text-white">Location</strong>
+                            <span class="text-gray-400">Al Aweer Fruit & Vegetable Market, Dubai, UAE</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong class="block text-white">Email Address</strong>
+                            <span class="text-gray-400">todayharvesttrading@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <strong class="block text-white">Direct Line</strong>
+                            <span class="text-gray-400">+971 5X XXX XXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Form -->
+            <div class="bg-brandDark p-8 rounded-2xl border border-gray-800 space-y-4">
+                <h3 class="text-xl font-bold text-white">Send Quick Inquiry</h3>
+                <form onsubmit="handleSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-400 mb-1">Your Name</label>
+                        <input type="text" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-400 mb-1">Phone / WhatsApp</label>
+                        <input type="text" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="+971 50 XXXXXXX">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-400 mb-1">Requirement / Message</label>
+                        <textarea rows="3" required class="w-full bg-brandCard border border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandAccent text-white" placeholder="Mention fruits/vegetables requirement..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brandAccent hover:bg-emerald-600 text-brandDark font-bold py-3.5 rounded-xl transition shadow-lg shadow-brandAccent/20">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandDark border-t border-gray-800 py-8 px-4 sm:px-12 text-center text-xs text-gray-500 space-y-2">
+        <p>&copy; 2026 Today Harvest Trading LLC. All Rights Reserved. Registered under Sharjah Media City (SHAMS).</p>
+        <p>Al Aweer Fruit and Vegetable Market, Dubai, United Arab Emirates.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submit Handler
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Thank you! Your inquiry has been submitted successfully to Today Harvest Trading LLC.');
+            e.target.reset();
+        }
+    </script>
 </body>
 </html>
