@@ -1,9 +1,14 @@
-/* --- Products & Global Sourcing Section Styles --- */
+/* ==========================================================
+   Today Harvest Trading LLC - Global Sourcing Section CSS
+   ========================================================== */
+
+/* Main Section Styling */
 .products {
-    padding: 80px 20px;
-    background-color: #07192f; /* Deep Navy Blue Enterprise Background */
-    color: #ffffff;
+    padding: 100px 20px;
+    background-color: #07192f;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff;
+    width: 100%;
 }
 
 .section-container {
@@ -24,7 +29,7 @@
     font-size: 1.1rem;
     color: #94a3b8;
     max-width: 700px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 60px auto;
     line-height: 1.6;
 }
 
@@ -32,7 +37,7 @@
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
+    gap: 30px;
     text-align: left;
 }
 
@@ -62,7 +67,7 @@
     color: #10b981;
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 50px;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
@@ -81,7 +86,7 @@
     font-size: 0.95rem;
     color: #cbd5e1;
     margin-bottom: 12px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .product-card-content p strong {
@@ -96,7 +101,7 @@
     }
     
     .products {
-        padding: 50px 15px;
+        padding: 60px 15px;
     }
     
     .product-grid {
