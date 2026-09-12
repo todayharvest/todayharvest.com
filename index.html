@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today Harvest Trading LLC | Premium Fresh Fruits & Vegetables Across GCC</title>
     <!-- Google Fonts & FontAwesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
             --primary-color: #0d3b66;
-            --accent-color: #2e7d32;
+            --accent-color: #10b981;
             --secondary-color: #f4a261;
-            --dark-color: #08233e;
+            --dark-color: #07192f;
             --light-bg: #f8f9fa;
             --text-color: #333333;
         }
@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         body {
@@ -60,7 +60,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 5px 5%;
+            padding: 10px 5%;
         }
 
         .logo {
@@ -68,10 +68,10 @@
             align-items: center;
         }
 
-        /* Transparent PNG Logo Styling - Extra Large & Zoomed */
+        /* Logo Styling - Fixed Size */
         .logo img {
-            height: 110px; /* ലോഗോ നല്ല വലിപ്പത്തിൽ കാണാൻ കൂട്ടി */
-            max-width: 350px;
+            height: 65px; /* ലോഗോയുടെ സൈസ് പെർഫെക്റ്റ് ആയി ക്രമീകരിച്ചു */
+            max-width: 250px;
             object-fit: contain;
             display: block;
             transition: transform 0.3s ease;
@@ -214,57 +214,106 @@
             color: #555;
         }
 
-        /* Products Section */
+        /* Products / Global Sourcing Section */
         .products {
-            background-color: var(--light-bg);
-            padding: 80px 5%;
+            padding: 100px 20px;
+            background-color: #07192f;
+            color: #ffffff;
+            width: 100%;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
         }
 
         .section-title {
-            font-size: 32px;
-            color: var(--primary-color);
-            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+            line-height: 1.6;
+            text-align: center;
         }
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .product-card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: 0.3s;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-6px);
+            border-color: #10b981;
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+            background: rgba(255, 255, 255, 0.05);
         }
 
-        .product-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .product-card-content {
-            padding: 20px;
+        .card-tag {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .product-card-content h3 {
-            color: var(--accent-color);
-            margin-bottom: 10px;
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .product-card-content p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .product-card-content p strong {
+            color: #ffffff;
+            font-weight: 600;
         }
 
         /* Why Choose Us */
         .features {
             padding: 80px 5%;
             text-align: center;
+            background-color: #ffffff;
+        }
+
+        .features h2 {
+            color: var(--primary-color);
         }
 
         .features-grid {
@@ -272,6 +321,9 @@
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 30px;
             margin-top: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .feature-box {
@@ -363,7 +415,13 @@
                 gap: 20px;
             }
             .logo img {
-                height: 80px;
+                height: 50px;
+            }
+            .products {
+                padding: 60px 15px;
+            }
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
@@ -440,29 +498,38 @@
         </div>
     </section>
 
-    <!-- Products Showcase -->
+    <!-- Products Showcase (Global Sourcing Section) -->
     <section class="products" id="products">
-        <h2 class="section-title">Our Core Offerings</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=600&q=80" alt="Fresh Fruits">
-                <div class="product-card-content">
-                    <h3>Fresh Fruits</h3>
-                    <p>Premium quality apples, citrus fruits, berries, and tropical fruits sourced globally.</p>
+        <div class="section-container">
+            <h2 class="section-title">Global Sourcing & Core Offerings</h2>
+            <p class="section-subtitle">We bridge global farms and regional markets with rigorous quality control and cold chain logistics.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="card-tag">Fresh Fruits</span>
+                    <div class="product-card-content">
+                        <h3>Global Fruit Imports</h3>
+                        <p><strong>Varieties:</strong> Premium apples, citrus, berries, and exotic tropical selections.</p>
+                        <p><strong>Supply Standard:</strong> Sourced directly from certified international orchards ensuring peak sweetness and longevity.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=600&q=80" alt="Fresh Vegetables">
-                <div class="product-card-content">
-                    <h3>Farm Vegetables</h3>
-                    <p>High quality farm-fresh daily green vegetables, root vegetables, and exotic produce.</p>
+
+                <div class="product-card">
+                    <span class="card-tag">Farm Vegetables</span>
+                    <div class="product-card-content">
+                        <h3>Daily Farm Vegetables</h3>
+                        <p><strong>Varieties:</strong> Leafy greens, root vegetables, and daily kitchen essentials.</p>
+                        <p><strong>Supply Standard:</strong> Hand-picked, sorted, and packed to maintain crisp freshness from farm to shelf.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&w=600&q=80" alt="Bulk & Container Supply">
-                <div class="product-card-content">
-                    <h3>Container & Wholesale</h3>
-                    <p>Bulk supply and container shipment solutions tailored for supermarkets and GCC distributors.</p>
+
+                <div class="product-card">
+                    <span class="card-tag">B2B Logistics</span>
+                    <div class="product-card-content">
+                        <h3>Container & Bulk Wholesale</h3>
+                        <p><strong>Varieties:</strong> Full container loads (FCL) and consolidated shipments for regional distributors.</p>
+                        <p><strong>Supply Standard:</strong> Temperature-controlled cold chain transit protecting produce integrity across GCC borders.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,7 +537,7 @@
 
     <!-- Why Choose Us -->
     <section class="features" id="why-us">
-        <h2 class="section-title">Why Choose Today Harvest?</h2>
+        <h2 class="section-title" style="color: var(--primary-color);">Why Choose Today Harvest?</h2>
         <div class="features-grid">
             <div class="feature-box">
                 <i class="fas fa-truck-fast"></i>
