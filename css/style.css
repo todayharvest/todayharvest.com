@@ -1,7 +1,0 @@
-.logo img {
-    height: 80px; /* വലിപ്പം 60px-ൽ നിന്ന് 80px ആക്കി കൂട്ടി */
-    max-width: 280px; /* മാക്സിമം വീതി കൂട്ടി */
-    object-fit: contain;
-    display: block;
-    transition: transform 0.3s ease;
-}
