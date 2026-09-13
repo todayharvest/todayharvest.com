@@ -11,19 +11,19 @@
     <style>
         /* ==========================================================
            TODAY HARVEST TRADING LLC - ULTRA-PREMIUM GLOBAL ENTERPRISE
-           ================================================---------- */
+           ========================================================== */
 
         :root {
             --enterprise-navy: #07192f;      /* Deep Luxury Midnight Blue */
             --enterprise-blue: #0f2c42;      /* Primary Brand Blue */
             --enterprise-green: #10b981;     /* Vibrant Modern Emerald Green */
             --enterprise-green-dark: #059669;/* Rich Green Hover */
-            --accent-gold: #d97706;         /* Premium Accent Gold */
+            --accent-gold: #d97706;          /* Premium Accent Gold */
             --surface-light: #f8fafc;        /* Soft Clean Surface */
             --surface-white: #ffffff;        /* Pure White */
             --text-primary: #0f172a;       /* Deep Slate Main Text */
-            --text-muted: #64748b;         /* Professional Subtext */
-            --glass-bg: rgba(255, 255, 255, 0.85);
+            --text-muted: #64748b;           /* Professional Subtext */
+            --glass-bg: rgba(255, 255, 255, 0.92);
             --glass-border: rgba(255, 255, 255, 0.18);
             
             --shadow-soft: 0 10px 30px -5px rgba(15, 23, 42, 0.06);
@@ -51,7 +51,7 @@
         .top-bar {
             background: var(--enterprise-navy);
             color: #cbd5e1;
-            padding: 12px 6%;
+            padding: 10px 6%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -64,7 +64,8 @@
         .top-bar-left, .top-bar-right {
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .top-bar span {
@@ -87,7 +88,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            height: 90px;
+            height: 85px;
             display: flex;
             align-items: center;
             border-bottom: 1px solid #e2e8f0;
@@ -108,7 +109,7 @@
         }
 
         .logo img {
-            height: 58px;
+            height: 52px;
             width: auto;
             object-fit: contain;
             display: block;
@@ -122,7 +123,7 @@
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 35px;
+            gap: 30px;
             align-items: center;
         }
 
@@ -159,7 +160,7 @@
         .btn-header {
             background: linear-gradient(135deg, var(--enterprise-green), var(--enterprise-green-dark));
             color: var(--surface-white);
-            padding: 12px 26px;
+            padding: 10px 22px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -176,19 +177,28 @@
             box-shadow: var(--shadow-glow);
         }
 
+        /* Hamburger Menu Icon for Mobile */
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: var(--enterprise-blue);
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
         /* --- Immersive Cinematic Hero Section --- */
         .hero {
             background: linear-gradient(135deg, rgba(7, 25, 47, 0.88), rgba(15, 44, 66, 0.82)), url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1920&q=85');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            height: 85vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: var(--surface-white);
-            padding: 0 20px;
+            padding: 60px 20px;
             position: relative;
         }
 
@@ -244,6 +254,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn-primary {
@@ -283,7 +294,7 @@
         /* --- World-Class Stats Grid --- */
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             background: var(--surface-white);
             padding: 60px 6%;
             gap: 30px;
@@ -324,17 +335,19 @@
             letter-spacing: 0.5px;
         }
 
-        /* --- Enterprise About Section (Updated with Al Aweer Insights) --- */
+        /* --- Enterprise About Section --- */
         .about {
-            padding: 120px 6%;
+            padding: 100px 6%;
             display: flex;
             gap: 70px;
             align-items: center;
             background: var(--surface-white);
+            flex-wrap: wrap;
         }
 
         .about-img {
             flex: 1;
+            min-width: 300px;
             position: relative;
         }
 
@@ -349,10 +362,11 @@
 
         .about-text {
             flex: 1;
+            min-width: 300px;
         }
 
         .about-text h2 {
-            font-size: 40px;
+            font-size: 38px;
             color: var(--enterprise-blue);
             margin-bottom: 24px;
             font-weight: 800;
@@ -365,15 +379,15 @@
             font-size: 17px;
         }
 
-        /* --- High-End Products Showcase (Clean & Categorized) --- */
+        /* --- High-End Products Showcase --- */
         .products {
             background-color: var(--surface-light);
-            padding: 120px 6%;
+            padding: 100px 6%;
             text-align: center;
         }
 
         .section-title {
-            font-size: 42px;
+            font-size: 38px;
             color: var(--enterprise-blue);
             margin-bottom: 15px;
             font-weight: 800;
@@ -391,8 +405,8 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             text-align: left;
         }
 
@@ -403,14 +417,14 @@
             box-shadow: var(--shadow-soft);
             transition: var(--transition-smooth);
             border: 1px solid #e2e8f0;
-            padding: 35px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         .product-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-hover);
             border-color: var(--enterprise-green);
         }
@@ -418,7 +432,7 @@
         .product-card-content h3 {
             color: var(--enterprise-blue);
             font-size: 22px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 700;
         }
 
@@ -438,10 +452,10 @@
             font-size: 13px;
             font-weight: 700;
             letter-spacing: 0.3px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
-        /* Collapsible List styling for full item list */
+        /* Collapsible List styling */
         .collapsible-content {
             max-height: 0;
             overflow: hidden;
@@ -473,20 +487,20 @@
 
         /* --- Enterprise Features Section --- */
         .features {
-            padding: 120px 6%;
+            padding: 100px 6%;
             text-align: center;
             background: var(--surface-white);
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
         }
 
         .feature-box {
-            padding: 45px 35px;
+            padding: 40px 30px;
             background: var(--surface-light);
             border: 1px solid #e2e8f0;
             border-radius: 20px;
@@ -502,9 +516,9 @@
         }
 
         .feature-box i {
-            font-size: 48px;
+            font-size: 44px;
             color: var(--enterprise-green);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .feature-box h3 {
@@ -525,12 +539,12 @@
             background-size: cover;
             background-position: center;
             color: var(--surface-white);
-            padding: 120px 6%;
+            padding: 100px 6%;
             text-align: center;
         }
 
         .contact h2 {
-            font-size: 42px;
+            font-size: 38px;
             margin-bottom: 20px;
             font-weight: 800;
         }
@@ -546,7 +560,7 @@
         footer {
             background-color: var(--enterprise-navy);
             color: #94a3b8;
-            padding: 60px 6% 30px;
+            padding: 50px 6% 30px;
             text-align: center;
             border-top: 4px solid var(--enterprise-green);
         }
@@ -556,18 +570,18 @@
             font-weight: 500;
         }
 
-        /* --- Floating WhatsApp Button with Pulse Animation --- */
+        /* --- Floating WhatsApp Button --- */
         .whatsapp-float {
             position: fixed;
-            width: 65px;
-            height: 65px;
-            bottom: 40px;
-            right: 40px;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
-            font-size: 34px;
+            font-size: 32px;
             box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
             z-index: 100;
             display: flex;
@@ -583,34 +597,39 @@
         }
 
         @keyframes pulse-green {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
 
         /* --- Responsive Layout Adjustments --- */
         @media (max-width: 900px) {
-            .about {
-                flex-direction: column;
-                padding: 80px 5%;
-            }
-            .hero-content h1 {
-                font-size: 36px;
-            }
             .top-bar {
                 display: none;
             }
-            .nav-links {
-                display: none;
+            .hamburger {
+                display: block;
             }
-            header {
-                height: 75px;
+            .nav-links {
+                position: fixed;
+                top: 85px;
+                left: 0;
+                width: 100%;
+                background: var(--surface-white);
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 0;
+                box-shadow: var(--shadow-hover);
+                clip-path: circle(0px at top right);
+                transition: clip-path 0.5s ease-in-out;
+                z-index: 999;
+            }
+            .nav-links.active {
+                clip-path: circle(1200px at top right);
+            }
+            .hero-content h1 {
+                font-size: 32px;
             }
             .stats {
                 margin-top: 0;
@@ -639,13 +658,19 @@
                     <img src="images/logo.png" alt="Today Harvest Trading LLC Logo">
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link-item">Home</a></li>
+                <li><a href="#about" class="nav-link-item">About Us</a></li>
+                <li><a href="#products" class="nav-link-item">Products</a></li>
+                <li><a href="#why-us" class="nav-link-item">Why Us</a></li>
+                <li><a href="#contact" class="nav-link-item">Contact</a></li>
             </ul>
+
             <a href="https://wa.me/971547346335?text=Hello%20Today%20Harvest%20Trading,%20I%20have%20an%20inquiry" target="_blank" class="btn-header"><i class="fab fa-whatsapp"></i> Quick Inquiry</a>
         </nav>
     </header>
@@ -683,7 +708,7 @@
         </div>
     </section>
 
-    <!-- About Section (Reflected with Real Market Dynamics) -->
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="about-img">
             <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Produce Wholesale Dubai">
@@ -696,7 +721,7 @@
         </div>
     </section>
 
-    <!-- Products / Global Sourcing Section (Redesigned with Clean Categories & View More) -->
+    <!-- Products Section -->
     <section class="products" id="products">
         <div class="section-container">
             <h2 class="section-title">Our Global Sourcing Categories</h2>
@@ -841,8 +866,9 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- JavaScript for View More Toggle -->
+    <!-- JavaScript for Mobile Menu & View More Toggle -->
     <script>
+        // View More Toggle
         function toggleList(listId, button) {
             const list = document.getElementById(listId);
             list.classList.toggle('open');
@@ -852,6 +878,33 @@
                 button.textContent = 'View All Varieties';
             }
         }
+
+        // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.getElementById('navLinks');
+        const navItems = document.querySelectorAll('.nav-link-item');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburgerBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburgerBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
     </script>
 
 </body>
