@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://todayharvest.com/sitemap.xml
